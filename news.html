@@ -4,7 +4,7 @@
     <meta http-equiv="text/html" charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ура!</title>
+    <title>Новости | Ура!</title>
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
   </head>
   <body>
@@ -23,87 +23,127 @@
             </div>
           </div>
         </header>
-    <section class="index-slider">
-      <div class="index-slider__slide">
-        <div class="index-slider__image"><img src="img/index.jpg"></div>
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <p class="index-slider__text">По всему свету</p>
-              <p class="index-slider__text index-slider__text--big">4G интернет</p>
-              <p class="index-slider__text">Роуминг карта</p>
-              <button class="button button--blue index-slider__button">Подробнее</button>
+    <!-- SEARCH-->
+    <section class="search">
+      <div class="search__container">
+        <p class="search__title">Покупайте и продавайте электронику на УРА!</p>
+        <p class="search__subtitle">Просто, быстро и эффективно</p>
+        <form class="search-block">
+          <div class="search-block__left">
+            <div class="search-block__left-content">
+              <input class="form-block search-block__input" type="text" placeholder="Более 12 000 000 товаров в каталоге">
             </div>
           </div>
-        </div>
-      </div>
-      <div class="index-slider__slide">
-        <div class="index-slider__image"><img src="img/index.jpg"></div>
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <p class="index-slider__text">По всему свету</p>
-              <p class="index-slider__text index-slider__text--big">4G интернет</p>
-              <p class="index-slider__text">Роуминг карта</p>
-              <button class="button button--blue index-slider__button">Подробнее</button>
+          <div class="search-block__right">
+            <div class="search-block__right-content">
+              <select class="search-block__select" onchange="this.style.color='#282B30'">
+                <option>Все категории</option>
+                <option>Текстиль</option>
+                <option>Сельхоз. товары</option>
+                <option>Товары для дома</option>
+              </select>
+              <button class="button button--violet search-block__button">Найти</button>
             </div>
           </div>
-        </div>
+        </form>
       </div>
     </section>
-    <section class="content categories">
+    <!-- BREADCRUMBS-->
+        <section class="breadcrumbs">
+          <div class="breadcrumbs__list"><a class="breadcrumbs__link" href="index.html">Ура!</a><a class="breadcrumbs__link" href="">Молдова</a>
+          </div>
+          <h1 class="breadcrumbs__title">Новости</h1>
+        </section>
+    <section class="content">
+      <div class="news-tabs"><a class="news-tabs__item news-tabs__item--active">Блог</a><a class="news-tabs__item">Лайфхаки</a><a class="news-tabs__item"><span class="d-none d-sm-block">Полезные советы</span><span class="d-block d-sm-none">Советы</span></a></div>
       <div class="container">
-        <div class="row">
-          <div class="col-6 col-sm-6 col-md-4 col-lg-3 categories__wrap"><a class="categories__item" href="">
-              <div class="categories__icon"><img src="img/cat1.svg"></div>
-              <p class="categories__name">Текстиль</p>
-              <p class="categories__shops">32 магазина</p></a></div>
-          <div class="col-6 col-sm-6 col-md-4 col-lg-3 categories__wrap"><a class="categories__item" href="">
-              <div class="categories__icon"><img src="img/cat2.svg"></div>
-              <p class="categories__name">Сельхоз товары</p>
-              <p class="categories__shops">17 магазинов</p></a></div>
-          <div class="col-6 col-sm-6 col-md-4 col-lg-3 categories__wrap"><a class="categories__item" href="">
-              <div class="categories__icon"><img src="img/cat3.svg"></div>
-              <p class="categories__name">Товары для дома</p>
-              <p class="categories__shops">23 магазина</p></a></div>
-          <div class="col-6 col-sm-6 col-md-4 col-lg-3 categories__wrap"><a class="categories__item" href="">
-              <div class="categories__icon"><img src="img/cat4.svg"></div>
-              <p class="categories__name">Электроника</p>
-              <p class="categories__shops">55 магазинов</p></a></div>
-          <div class="col-6 col-sm-6 col-md-4 col-lg-3 categories__wrap"><a class="categories__item" href="">
-              <div class="categories__icon"><img src="img/cat5.svg"></div>
-              <p class="categories__name">Транспорт</p>
-              <p class="categories__shops">25 магазинов</p></a></div>
-          <div class="col-6 col-sm-6 col-md-4 col-lg-3 categories__wrap"><a class="categories__item" href="">
-              <div class="categories__icon"><img src="img/cat6.svg"></div>
-              <p class="categories__name">Недвижимость</p>
-              <p class="categories__shops">4 магазина</p></a></div>
-          <div class="col-6 col-sm-6 col-md-4 col-lg-3 categories__wrap"><a class="categories__item" href="">
-              <div class="categories__icon"><img src="img/cat7.svg"></div>
-              <p class="categories__name">Здоровье и красота</p>
-              <p class="categories__shops">8 магазинов</p></a></div>
-          <div class="col-6 col-sm-6 col-md-4 col-lg-3 categories__wrap"><a class="categories__item" href="">
-              <div class="categories__icon"><img src="img/cat8.svg"></div>
-              <p class="categories__name">Отдам даром</p>
-              <p class="categories__shops">57 магазинов</p></a></div>
-          <div class="col-6 col-sm-6 col-md-4 col-lg-3 categories__wrap"><a class="categories__item" href="">
-              <div class="categories__icon"><img src="img/cat9.svg"></div>
-              <p class="categories__name">Спорт</p>
-              <p class="categories__shops">22 магазина</p></a></div>
-          <div class="col-6 col-sm-6 col-md-4 col-lg-3 categories__wrap"><a class="categories__item" href="">
-              <div class="categories__icon"><img src="img/cat10.svg"></div>
-              <p class="categories__name">Животные</p>
-              <p class="categories__shops">48 магазинов</p></a></div>
-          <div class="col-6 col-sm-6 col-md-4 col-lg-3 categories__wrap"><a class="categories__item" href="">
-              <div class="categories__icon"><img src="img/cat11.svg"></div>
-              <p class="categories__name">Товары для взрослых</p>
-              <p class="categories__shops">32 магазина</p></a></div>
-          <div class="col-6 col-sm-6 col-md-4 col-lg-3 categories__wrap">
-            <div class="categories__empty"></div>
+        <div class="news">
+          <div class="row">
+            <div class="col-xl-4 col-md-6 col-sm-12">
+              <div class="item-card news__card">
+                <div class="item-card__image"><img src="img/item1.png"><span class="item-card__label">Популярное</span></div>
+                <div class="item-card__info"><a class="item-card__name">Обзор ideapad C340: производительный ноутбук-трансформер от Lenovo</a></div>
+                <div class="item-card__bottom"><span class="item-card__date">Вчера 18:24</span><span class="item-card__views">13 284</span></div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-6 d-none d-md-flex">
+              <div class="item-card news__card">
+                <div class="item-card__image"><img src="img/item1.png"><span class="item-card__label">Популярное</span></div>
+                <div class="item-card__info"><a class="item-card__name">Huawei запатентовала новый дизайн раскладного смартфона</a></div>
+                <div class="item-card__bottom"><span class="item-card__date">Вчера 18:24</span><span class="item-card__views">13 284</span></div>
+              </div>
+            </div>
+            <div class="col-xl-4 d-none d-xl-flex">
+              <div class="item-card news__card">
+                <div class="item-card__image"><img src="img/item1.png"><span class="item-card__label">Популярное</span></div>
+                <div class="item-card__info"><a class="item-card__name">Обзор ideapad C340: производительный ноутбук-трансформер от Lenovo</a></div>
+                <div class="item-card__bottom"><span class="item-card__date">Вчера 18:24</span><span class="item-card__views">13 284</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-3 col-md-4 col-sm-6">
+              <div class="item-card news__card">
+                <div class="item-card__image"><img src="img/item1.png"></div>
+                <div class="item-card__info"><a class="item-card__name">Обзор ideapad C340: производительный ноутбук-трансформер от Lenovo</a></div>
+                <div class="item-card__bottom"><span class="item-card__date">Вчера 18:24</span><span class="item-card__views">13 284</span></div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-6">
+              <div class="item-card news__card">
+                <div class="item-card__image"><img src="img/item1.png"></div>
+                <div class="item-card__info"><a class="item-card__name">В сети появился тизер смартфона ASUS ROG Phone 3</a></div>
+                <div class="item-card__bottom"><span class="item-card__date">Вчера 18:24</span><span class="item-card__views">13 284</span></div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-6">
+              <div class="item-card news__card">
+                <div class="item-card__image"><img src="img/item1.png"></div>
+                <div class="item-card__info"><a class="item-card__name">Релиз игры Mafia: Definitive Edition перенесли на сентябрь</a></div>
+                <div class="item-card__bottom"><span class="item-card__date">Вчера 18:24</span><span class="item-card__views">13 284</span></div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-6">
+              <div class="item-card news__card">
+                <div class="item-card__image"><img src="img/item1.png"></div>
+                <div class="item-card__info"><a class="item-card__name">Игра PUBG Mobile получит первую эксклюзивную карту</a></div>
+                <div class="item-card__bottom"><span class="item-card__date">Вчера 18:24</span><span class="item-card__views">13 284</span></div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-6">
+              <div class="item-card news__card">
+                <div class="item-card__image"><img src="img/item1.png"></div>
+                <div class="item-card__info"><a class="item-card__name">Представлена обновленная версия ноутбука RedmiBook 14 II</a></div>
+                <div class="item-card__bottom"><span class="item-card__date">Вчера 18:24</span><span class="item-card__views">13 284</span></div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-6">
+              <div class="item-card news__card">
+                <div class="item-card__image"><img src="img/item1.png"></div>
+                <div class="item-card__info"><a class="item-card__name">Игровой смартфон Lenovo Legion засветился на AnTuTu</a></div>
+                <div class="item-card__bottom"><span class="item-card__date">Вчера 18:24</span><span class="item-card__views">13 284</span></div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-6">
+              <div class="item-card news__card">
+                <div class="item-card__image"><img src="img/item1.png"></div>
+                <div class="item-card__info"><a class="item-card__name">Обзор ideapad C340: производительный ноутбук-трансформер от Lenovo</a></div>
+                <div class="item-card__bottom"><span class="item-card__date">Вчера 18:24</span><span class="item-card__views">13 284</span></div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-6">
+              <div class="item-card news__card">
+                <div class="item-card__image"><img src="img/item1.png"></div>
+                <div class="item-card__info"><a class="item-card__name">Moaan при поддержке Xiaomi представила электронную книгу inkPad X</a></div>
+                <div class="item-card__bottom"><span class="item-card__date">Вчера 18:24</span><span class="item-card__views">13 284</span></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- PAGINATION-->
+    <section class="pagination"><a class="pagination__link pagination__link--active" href="">1</a><a class="pagination__link" href="">2</a><a class="pagination__link" href="">3</a><a class="pagination__link" href="">4</a><span class="pagination__link pagination__link--between">...</span><a class="pagination__link" href="">14</a></section>
     <!-- NUMBERS-->
     <section class="numbers">
       <div class="container">
