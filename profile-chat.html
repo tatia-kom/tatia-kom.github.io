@@ -4,7 +4,7 @@
     <meta http-equiv="text/html" charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Новости | Ура!</title>
+    <title>Диалог | Ура!</title>
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
   </head>
   <body>
@@ -18,132 +18,115 @@
                     <option>RU</option>
                     <option>EN</option>
                   </select>
-                </div><a class="header__link header__link--login" data-toggle="modal" data-target="#loginModal">Войти</a><a class="header__link header__link--signup d-none d-md-block">Регистрация</a><a class="button button--bordered header__add d-none d-lg-flex">Добавить объявление</a>
+                </div>
+                <div class="dropdown">
+                  <button class="header__profile" id="profileMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Admin</button>
+                  <div class="dropdown-menu header__dropdown" aria-labelledby="profileMenuButton"><a class="dropdown-item" href="">Профиль</a><a class="dropdown-item" href="">Мои объвления</a><a class="dropdown-item" href="">Диалоги</a>
+                    <div class="dropdown-divider"></div><a class="dropdown-item" href="">Выйти</a>
+                  </div>
+                </div><a class="button button--bordered header__add d-none d-lg-flex">Добавить объявление</a>
               </div>
             </div>
           </div>
         </header>
-    <!-- SEARCH-->
-    <section class="search">
-      <div class="search__container">
-        <p class="search__title">Покупайте и продавайте электронику на УРА!</p>
-        <p class="search__subtitle">Просто, быстро и эффективно</p>
-        <form class="search-block">
-          <div class="search-block__left">
-            <div class="search-block__left-content">
-              <input class="form-block search-block__input" type="text" placeholder="Более 12 000 000 товаров в каталоге">
-            </div>
-          </div>
-          <div class="search-block__right">
-            <div class="search-block__right-content">
-              <select class="search-block__select" onchange="this.style.color='#282B30'">
-                <option>Все категории</option>
-                <option>Текстиль</option>
-                <option>Сельхоз. товары</option>
-                <option>Товары для дома</option>
-              </select>
-              <button class="button button--violet search-block__button">Найти</button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </section>
     <!-- BREADCRUMBS-->
         <section class="breadcrumbs">
-          <div class="breadcrumbs__list"><a class="breadcrumbs__link" href="index.html">Ура!</a><a class="breadcrumbs__link" href="">Молдова</a>
+          <div class="breadcrumbs__list"><a class="breadcrumbs__link" href="index.html">Ура!</a><a class="breadcrumbs__link" href="">Диалоги</a>
           </div>
-          <h1 class="breadcrumbs__title">Новости</h1>
+          <h1 class="breadcrumbs__title">Портмоне COACH барсетка кошелек оригинал кожа</h1>
         </section>
-    <section class="content">
-      <div class="news-tabs"><a class="news-tabs__item news-tabs__item--active">Блог</a><a class="news-tabs__item">Лайфхаки</a><a class="news-tabs__item"><span class="d-none d-sm-block">Полезные советы</span><span class="d-block d-sm-none">Советы</span></a></div>
-      <div class="container">
-        <div class="news">
-          <div class="row">
-            <div class="col-xl-4 col-md-6 col-sm-12">
-              <div class="item-card news__card">
-                <div class="item-card__image"><img src="img/item1.png"><span class="item-card__label">Популярное</span></div>
-                <div class="item-card__info"><a class="item-card__name">Обзор ideapad C340: производительный ноутбук-трансформер от Lenovo</a></div>
-                <div class="item-card__bottom"><span class="item-card__date">Вчера 18:24</span><span class="item-card__views">13 284</span></div>
+    <section class="content profile">
+      <div class="container-fluid container-sm">
+        <div class="row">
+          <!-- left panel-->
+          <div class="col-md-4 col-lg-3">
+            <div class="profile-left">
+              <div class="item-author__top">
+                <div class="item-author__ava"><img src="img/item-ava.png"></div>
+                <div class="item-author__info">
+                  <p class="item-author__name">Кирилл</p>
+                  <p class="item-author__place">Золотоноша</p>
+                </div>
               </div>
-            </div>
-            <div class="col-xl-4 col-md-6 d-none d-md-flex">
-              <div class="item-card news__card">
-                <div class="item-card__image"><img src="img/item1.png"><span class="item-card__label">Популярное</span></div>
-                <div class="item-card__info"><a class="item-card__name">Huawei запатентовала новый дизайн раскладного смартфона</a></div>
-                <div class="item-card__bottom"><span class="item-card__date">Вчера 18:24</span><span class="item-card__views">13 284</span></div>
-              </div>
-            </div>
-            <div class="col-xl-4 d-none d-xl-flex">
-              <div class="item-card news__card">
-                <div class="item-card__image"><img src="img/item1.png"><span class="item-card__label">Популярное</span></div>
-                <div class="item-card__info"><a class="item-card__name">Обзор ideapad C340: производительный ноутбук-трансформер от Lenovo</a></div>
-                <div class="item-card__bottom"><span class="item-card__date">Вчера 18:24</span><span class="item-card__views">13 284</span></div>
-              </div>
+              <div class="profile-left__divider"></div><a class="profile-left__link" href=""><span class="profile-left__icon"><svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17 19V17C17 15.9391 16.5786 14.9217 15.8284 14.1716C15.0783 13.4214 14.0609 13 13 13H5C3.93913 13 2.92172 13.4214 2.17157 14.1716C1.42143 14.9217 1 15.9391 1 17V19M13 5C13 7.20914 11.2091 9 9 9C6.79086 9 5 7.20914 5 5C5 2.79086 6.79086 1 9 1C11.2091 1 13 2.79086 13 5Z" stroke="#00A7F1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span>Личные данные</a>
+              <div class="profile-left__divider"></div><a class="profile-left__link" href=""><span class="profile-left__icon"><svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11 1H3C2.46957 1 1.96086 1.21071 1.58579 1.58579C1.21071 1.96086 1 2.46957 1 3V19C1 19.5304 1.21071 20.0391 1.58579 20.4142C1.96086 20.7893 2.46957 21 3 21H15C15.5304 21 16.0391 20.7893 16.4142 20.4142C16.7893 20.0391 17 19.5304 17 19V7M11 1L17 7M11 1V7H17M13 12H5M13 16H5M7 8H5" stroke="#00A7F1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span>Мои объявления</a><a class="profile-left__link" href=""><span class="profile-left__icon"><svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.5 1L14.7445 7.91167L22 9.02681L16.75 14.4038L17.989 22L11.5 18.4117L5.011 22L6.25 14.4038L1 9.02681L8.2555 7.91167L11.5 1Z" stroke="#00A7F1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span>Избранные<span class="profile-left__badge">35</span></a><a class="profile-left__link" href=""><span class="profile-left__icon"><svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 19L8 14L1 19V3C1 2.46957 1.21071 1.96086 1.58579 1.58579C1.96086 1.21071 2.46957 1 3 1H13C13.5304 1 14.0391 1.21071 14.4142 1.58579C14.7893 1.96086 15 2.46957 15 3V19Z" stroke="#00A7F1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span>Сохраненный поиск</a><a class="profile-left__link" href=""><span class="profile-left__icon"><svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7 9L10 12L20 2M19 10V17C19 17.5304 18.7893 18.0391 18.4142 18.4142C18.0391 18.7893 17.5304 19 17 19H3C2.46957 19 1.96086 18.7893 1.58579 18.4142C1.21071 18.0391 1 17.5304 1 17V3C1 2.46957 1.21071 1.96086 1.58579 1.58579C1.96086 1.21071 2.46957 1 3 1H14" stroke="#00A7F1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span>На подтверждении</a><a class="profile-left__link" href=""><span class="profile-left__icon"><svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.1818 5.44444V17H2.81818V5.44444M9.18182 9H12.8182M1 1H21V5.44444H1V1Z" stroke="#00A7F1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span>Архив объявлений</a>
+              <div class="profile-left__link profile-left__link--active"><span class="profile-left__icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 9.50003C0.996559 10.8199 1.30493 12.1219 1.9 13.3C2.60557 14.7118 3.69025 15.8992 5.03255 16.7293C6.37485 17.5594 7.92176 17.9994 9.5 18C10.8199 18.0035 12.1219 17.6951 13.3 17.1L19 19L17.1 13.3C17.6951 12.1219 18.0034 10.8199 18 9.50003C17.9994 7.92179 17.5594 6.37488 16.7293 5.03258C15.8992 3.69028 14.7117 2.6056 13.3 1.90003C12.1219 1.30496 10.8199 0.996587 9.5 1.00003H9C6.91565 1.11502 4.94696 1.99479 3.47086 3.47089C1.99476 4.94699 1.11499 6.91568 1 9.00003V9.50003Z" stroke="#00A7F1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span>Диалоги<span class="profile-left__badge">2</span></div><a class="profile-left__link" href=""><span class="profile-left__icon"><svg width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7 1V23M12 5H4.5C3.57174 5 2.6815 5.36875 2.02513 6.02513C1.36875 6.6815 1 7.57174 1 8.5C1 9.42826 1.36875 10.3185 2.02513 10.9749C2.6815 11.6313 3.57174 12 4.5 12H9.5C10.4283 12 11.3185 12.3687 11.9749 13.0251C12.6313 13.6815 13 14.5717 13 15.5C13 16.4283 12.6313 17.3185 11.9749 17.9749C11.3185 18.6313 10.4283 19 9.5 19H1" stroke="#00A7F1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span>Операции</a>
+              <div class="profile-left__divider"></div><a class="profile-left__link" href=""><span class="profile-left__icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7 19H3C2.46957 19 1.96086 18.7893 1.58579 18.4142C1.21071 18.0391 1 17.5304 1 17V3C1 2.46957 1.21071 1.96086 1.58579 1.58579C1.96086 1.21071 2.46957 1 3 1H7M14 15L19 10M19 10L14 5M19 10H7" stroke="#00A7F1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span>Выйти</a>
             </div>
           </div>
-          <div class="row">
-            <div class="col-xl-3 col-md-4 col-sm-6">
-              <div class="item-card news__card">
-                <div class="item-card__image"><img src="img/item1.png"></div>
-                <div class="item-card__info"><a class="item-card__name">Обзор ideapad C340: производительный ноутбук-трансформер от Lenovo</a></div>
-                <div class="item-card__bottom"><span class="item-card__date">Вчера 18:24</span><span class="item-card__views">13 284</span></div>
+          <!-- dialog-->
+          <div class="col-md-8 col-lg-9"><a class="button button--bordered profile__back" href="">Вернуться назад</a>
+            <div class="profile-search">
+              <input class="profile-search__input" type="text" placeholder="Поиск в переписке">
+              <button class="profile-search__clear">Очистить</button>
+            </div>
+            <div class="profile-chat">
+              <div class="profile-chat__header">
+                <div class="profile-chat-user">
+                  <div class="profile-chat-user__ava"><img src="img/item-ava.png"></div>
+                  <div class="profile-chat-user__info">
+                    <p class="profile-chat-user__name">Марк</p><a class="profile-chat-user__email" href="mailto:">sbscr@outlook.com</a>
+                    <p class="profile-chat-user__phone">+33945030300</p>
+                  </div>
+                </div>
+                <div class="profile-chat-item">
+                  <div class="profile-chat-item__photo"><img src="img/item1.png"></div>
+                  <div class="profile-chat-item__info">
+                    <p class="profile-chat-item__title">Объявление</p><a class="profile-chat-item__name" href="">Портмоне COACH барсетка кошелек оригинал кожа и…</a>
+                  </div>
+                </div>
+              </div>
+              <button class="profile-chat__load-more">Загрузить ранние сообщения</button>
+              <div class="profile-chat__messages">
+                <div class="profile-chat-message">
+                  <div class="profile-chat-message__ava"><img src="img/item-ava.png"></div>
+                  <div class="profile-chat-message__content">
+                    <p class="profile-chat-message__date">3 дня назад</p>
+                    <div class="profile-chat-message__text">Привет. Подскажите стоимость?</div>
+                  </div>
+                </div>
+                <div class="profile-chat-message">
+                  <div class="profile-chat-message__ava"><img src="img/item-ava.png"></div>
+                  <div class="profile-chat-message__content">
+                    <p class="profile-chat-message__date">2 дня назад</p>
+                    <div class="profile-chat-message__text">за 2000 отдам</div>
+                  </div>
+                </div>
+                <div class="profile-chat-message">
+                  <div class="profile-chat-message__ava"><img src="img/item-ava.png"></div>
+                  <div class="profile-chat-message__content">
+                    <p class="profile-chat-message__date">Вчера 18:24</p>
+                    <div class="profile-chat-message__text">В рамках спецификации современных стандартов, ключевые особенности структуры проекта лишь добавляют фракционных разногласий и превращены в посмешище, хотя само их существование приносит несомненную пользу обществу.</div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="col-xl-3 col-md-4 col-sm-6">
-              <div class="item-card news__card">
-                <div class="item-card__image"><img src="img/item1.png"></div>
-                <div class="item-card__info"><a class="item-card__name">В сети появился тизер смартфона ASUS ROG Phone 3</a></div>
-                <div class="item-card__bottom"><span class="item-card__date">Вчера 18:24</span><span class="item-card__views">13 284</span></div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-md-4 col-sm-6">
-              <div class="item-card news__card">
-                <div class="item-card__image"><img src="img/item1.png"></div>
-                <div class="item-card__info"><a class="item-card__name">Релиз игры Mafia: Definitive Edition перенесли на сентябрь</a></div>
-                <div class="item-card__bottom"><span class="item-card__date">Вчера 18:24</span><span class="item-card__views">13 284</span></div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-md-4 col-sm-6">
-              <div class="item-card news__card">
-                <div class="item-card__image"><img src="img/item1.png"></div>
-                <div class="item-card__info"><a class="item-card__name">Игра PUBG Mobile получит первую эксклюзивную карту</a></div>
-                <div class="item-card__bottom"><span class="item-card__date">Вчера 18:24</span><span class="item-card__views">13 284</span></div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-md-4 col-sm-6">
-              <div class="item-card news__card">
-                <div class="item-card__image"><img src="img/item1.png"></div>
-                <div class="item-card__info"><a class="item-card__name">Представлена обновленная версия ноутбука RedmiBook 14 II</a></div>
-                <div class="item-card__bottom"><span class="item-card__date">Вчера 18:24</span><span class="item-card__views">13 284</span></div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-md-4 col-sm-6">
-              <div class="item-card news__card">
-                <div class="item-card__image"><img src="img/item1.png"></div>
-                <div class="item-card__info"><a class="item-card__name">Игровой смартфон Lenovo Legion засветился на AnTuTu</a></div>
-                <div class="item-card__bottom"><span class="item-card__date">Вчера 18:24</span><span class="item-card__views">13 284</span></div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-md-4 col-sm-6">
-              <div class="item-card news__card">
-                <div class="item-card__image"><img src="img/item1.png"></div>
-                <div class="item-card__info"><a class="item-card__name">Обзор ideapad C340: производительный ноутбук-трансформер от Lenovo</a></div>
-                <div class="item-card__bottom"><span class="item-card__date">Вчера 18:24</span><span class="item-card__views">13 284</span></div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-md-4 col-sm-6">
-              <div class="item-card news__card">
-                <div class="item-card__image"><img src="img/item1.png"></div>
-                <div class="item-card__info"><a class="item-card__name">Moaan при поддержке Xiaomi представила электронную книгу inkPad X</a></div>
-                <div class="item-card__bottom"><span class="item-card__date">Вчера 18:24</span><span class="item-card__views">13 284</span></div>
-              </div>
-            </div>
+            <form class="profile-chat-form">
+              <textarea class="profile-chat-form__textarea" placeholder="Введите текст сообщения"></textarea>
+              <button class="button button--bordered profile-chat-form__button">Отправить сообщение</button>
+            </form>
           </div>
         </div>
       </div>
     </section>
-    <!-- PAGINATION-->
-    <section class="pagination"><a class="pagination__link pagination__link--active" href="">1</a><a class="pagination__link" href="">2</a><a class="pagination__link" href="">3</a><a class="pagination__link" href="">4</a><span class="pagination__link pagination__link--between">...</span><a class="pagination__link" href="">14</a></section>
     <!-- NUMBERS-->
     <section class="numbers">
       <div class="container">

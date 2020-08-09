@@ -18,7 +18,7 @@
                     <option>RU</option>
                     <option>EN</option>
                   </select>
-                </div><a class="header__link header__link--login">Войти</a><a class="header__link header__link--signup d-none d-md-block">Регистрация</a><a class="button button--bordered header__add d-none d-lg-flex">Добавить объявление</a>
+                </div><a class="header__link header__link--login" data-toggle="modal" data-target="#loginModal">Войти</a><a class="header__link header__link--signup d-none d-md-block">Регистрация</a><a class="button button--bordered header__add d-none d-lg-flex">Добавить объявление</a>
               </div>
             </div>
           </div>
@@ -169,7 +169,37 @@
           <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><a class="footer__bottom">Пользовательское соглашение</a></div>
         </div>
       </div>
-    </footer><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </footer>
+    <!-- MODAL-->
+    <div class="modal" id="loginModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Войти</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label class="col-form-label" for="inputEmail">Электронная почта / номер телефона</label>
+              <input class="form-control form-control-lg" type="text" id="inputEmail" placeholder="Введите email или телефон">
+            </div>
+            <div class="form-group">
+              <label class="col-form-label" for="inputPassword">Пароль</label>
+              <input class="form-control form-control-lg" type="password" id="inputPassword" placeholder="Введите пароль">
+            </div>
+            <div class="form-check form-check-inline modal__checkbox">
+              <input class="form-check-input" type="checkbox" value="" id="rememberMe" name="adsType" checked>
+              <label class="form-check-label" for="rememberMe">Не выходить из системы</label>
+            </div>
+            <div class="modal__links"><a href="">Забыли пароль?</a><span>|</span><a href="">Регистрация</a></div>
+          </div>
+          <div class="modal-footer">
+            <button class="button button--bordered" data-dismiss="modal">Закрыть</button>
+            <button class="button button--violet">Войти</button>
+          </div>
+        </div>
+      </div>
+    </div><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="js/all-scripts.js"></script>
   </body>
 </html>
