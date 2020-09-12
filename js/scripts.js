@@ -75,6 +75,14 @@ $(document).ready(function() {
         $(this).toggleClass('header__menu-link--active');
     });
 
+    if ($(window).width() < 768) {
+        $('.header__menu-link--opening').click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            $(this).toggleClass('header__menu-link--active');
+        });
+    }
+
     $('body').click(function() {
         $('.header__menu-link--catalog').removeClass('header__menu-link--active');
     });
