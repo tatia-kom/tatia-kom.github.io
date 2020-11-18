@@ -1,534 +1,215 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
+<html>
+  <head>
     <meta http-equiv="text/html" charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Главная</title>
-
-    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
-    <link rel="stylesheet" type="text/css" href="css/style.min.css"/>
-  
-</head>
-<body>
-
-    <!-- HEADER -->
-
-    <section class="mobile-header">
-       <div class="mobile-header__logo"><img src="img/mobile-logo.png" alt="" class="img-responsive"></div>
-        <a href="#" class="header__phone mobile-header__phone">+7 (495) 127-76-62</a>
-    </section>
-
+    <title>Ribas</title>
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+  </head>
+  <body>
+    <!-- HEADER-->
     <header class="header">
-        <div class="header__top-menu-wrap">
-            <nav>
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed header__top-menu-but" data-toggle="collapse" data-target="#navbar-top">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-                <div class="collapse navbar-collapse" id="navbar-top">
-                    <div class="header__top-menu">
-                        <!-- Add class "header__top-menu-link--active" to link for highlighting like below -->
-                        <a href="#" class="header__top-menu-link header__top-menu-link--active">Главная</a>
-                        <a href="#" class="header__top-menu-link">Возврат</a>
-                        <a href="#" class="header__top-menu-link">Доставка</a>
-                        <a href="#" class="header__top-menu-link">Ремонт турбины</a>
-                        <a href="#" class="header__top-menu-link">Контакты</a>
-                    </div>
-                    <div class="header__menu header__menu--mobile">
-                        <div class="header__menu-link header__menu-link--catalog">
-                            <span class="header__menu-icon"></span>
-                            <span>Каталог</span>
-
-                            <div class="header-catalog">
-                                <div class="header-catalog__column">
-                                    <a href="#" class="header-catalog__link">Роторы</a>
-                                    <a href="#" class="header-catalog__link header-catalog__link--bold">Корпусы</a>
-                                    <a href="#" class="header-catalog__link">Колесо компрессора</a>
-                                    <a href="#" class="header-catalog__link">Запчасти для эл. актуаторов</a>
-                                </div>
-                                <div class="header-catalog__column">
-                                    <a href="#" class="header-catalog__link">Роторы</a>
-                                    <a href="#" class="header-catalog__link">Корпусы</a>
-                                    <a href="#" class="header-catalog__link header-catalog__link--bold">Колесо компрессора</a>
-                                    <a href="#" class="header-catalog__link">Запчасти для эл. актуаторов</a>
-                                </div>
-                                <div class="header-catalog__column">
-                                    <a href="#" class="header-catalog__link header-catalog__link--bold">Роторы</a>
-                                    <a href="#" class="header-catalog__link">Корпусы</a>
-                                    <a href="#" class="header-catalog__link">Колесо компрессора</a>
-                                    <a href="#" class="header-catalog__link">Запчасти для эл. актуаторов</a>
-                                </div>
-                                <div class="header-catalog__column">
-                                    <a href="#" class="header-catalog__link">Роторы</a>
-                                    <a href="#" class="header-catalog__link">Корпусы</a>
-                                    <a href="#" class="header-catalog__link">Колесо компрессора</a>
-                                    <a href="#" class="header-catalog__link header-catalog__link--bold">Запчасти для эл. актуаторов</a>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="#" class="header__menu-link">Картриджи</a>
-                        <div class="header__menu-link header__menu-link--opening">
-                            <span>Клапаны</span>
-
-                            <div class="header-popup">
-                                <a href="#" class="header-popup__link">Ссылка 1</a>
-                                <a href="#" class="header-popup__link">Ссылка 2</a>
-                                <a href="#" class="header-popup__link">Ссылка 3</a>
-                                <a href="#" class="header-popup__link">Ссылка 4</a>
-                                <a href="#" class="header-popup__link">Ссылка 5</a>
-                            </div>
-                        </div>
-                        <a href="#" class="header__menu-link">Прокладки</a>
-                        <a href="#" class="header__menu-link">Геометрия</a>
-                        <a href="#" class="header__menu-link">Ремкомплекты</a>
-                        <a href="#" class="header__menu-link">Роторы</a>
-                        <a href="#" class="header__menu-link">Корпусы</a>
-                        <a href="#" class="header__menu-link">Колесо компрессора</a>
-                    </div>
-                </div>
-            </nav>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="header__main">
-                        <div class="header__logo"><img src="img/logo.svg" alt="" class="img-responsive"></div>
-                        <div class="header__address">
-                            г. Москва, завод МЕТРОМАШ, ул. Тагильская, дом 4, стр. 4
-                        </div>
-                        <div class="header__phones">
-                            <div class="header__credits">
-                                <span class="header__worktime">Звонок бесплатный</span>
-                                <a href="#" class="header__phone">+7 (800) 333-09-52</a>
-                            </div>
-                            <div class="header__credits">
-                                <span class="header__worktime">Ежедневно с 9:00 до 19:00</span>
-                                <a href="#" class="header__phone">+7 (495) 127-76-62</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="header__menu-wrap">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <nav>
-                            <div class="header__menu hidden-xs">
-                                <div class="header__menu-link header__menu-link--catalog">
-                                    <span class="header__menu-icon"></span>
-                                    <span>Каталог</span>
-
-                                    <div class="header-catalog">
-                                        <div class="header-catalog__column">
-                                            <a href="#" class="header-catalog__link">Роторы</a>
-                                            <a href="#" class="header-catalog__link header-catalog__link--bold">Корпусы</a>
-                                            <a href="#" class="header-catalog__link">Колесо компрессора</a>
-                                            <a href="#" class="header-catalog__link">Запчасти для эл. актуаторов</a>
-                                        </div>
-                                        <div class="header-catalog__column">
-                                            <a href="#" class="header-catalog__link">Роторы</a>
-                                            <a href="#" class="header-catalog__link">Корпусы</a>
-                                            <a href="#" class="header-catalog__link header-catalog__link--bold">Колесо компрессора</a>
-                                            <a href="#" class="header-catalog__link">Запчасти для эл. актуаторов</a>
-                                        </div>
-                                        <div class="header-catalog__column">
-                                            <a href="#" class="header-catalog__link header-catalog__link--bold">Роторы</a>
-                                            <a href="#" class="header-catalog__link">Корпусы</a>
-                                            <a href="#" class="header-catalog__link">Колесо компрессора</a>
-                                            <a href="#" class="header-catalog__link">Запчасти для эл. актуаторов</a>
-                                        </div>
-                                        <div class="header-catalog__column">
-                                            <a href="#" class="header-catalog__link">Роторы</a>
-                                            <a href="#" class="header-catalog__link">Корпусы</a>
-                                            <a href="#" class="header-catalog__link">Колесо компрессора</a>
-                                            <a href="#" class="header-catalog__link header-catalog__link--bold">Запчасти для эл. актуаторов</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="#" class="header__menu-link">Картриджи</a>
-                                <div class="header__menu-link header__menu-link--opening">
-                                    <span>Клапаны</span>
-
-                                    <div class="header-popup">
-                                        <a href="#" class="header-popup__link">Ссылка 1</a>
-                                        <a href="#" class="header-popup__link">Ссылка 2</a>
-                                        <a href="#" class="header-popup__link">Ссылка 3</a>
-                                        <a href="#" class="header-popup__link">Ссылка 4</a>
-                                        <a href="#" class="header-popup__link">Ссылка 5</a>
-                                    </div>
-                                </div>
-                                <a href="#" class="header__menu-link">Прокладки</a>
-                                <a href="#" class="header__menu-link">Геометрия</a>
-                                <a href="#" class="header__menu-link">Ремкомплекты</a>
-                                <a href="#" class="header__menu-link">Роторы</a>
-                                <a href="#" class="header__menu-link">Корпусы</a>
-                                <a href="#" class="header__menu-link">Колесо компрессора</a>
-                            </div>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="header__search-block">
-                        <input type="text" class="header__search-input" placeholder="Поиск по номеру турбины / двигателю">
-                        <button class="orange-button header__search-button">Найти</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+      <div class="header__container"><a class="header__logo" href=""><img src="img/logo.svg"></a>
+        <nav class="header-menu"><a class="header-menu__item scroll-to" href="#company">О компании</a><a class="header-menu__item scroll-to" href="#objects">Наши объекты</a><a class="header-menu__item scroll-to" href="#press">Инвестиционные предложения</a><a class="header-menu__item scroll-to" href="#press">Новости</a><a class="header-menu__item scroll-to" href="#contacts">Контакты</a></nav>
+        <div class="header-socials"><a class="header-socials__item" href=""><img src="img/fb.svg"></a><a class="header-socials__item" href=""><img src="img/insta.svg"></a></div>
+        <div class="header-connect"><a class="header-connect__phone" href="tel:+380509158947">+380509158947</a>
+          <button class="header-connect__button">Обратный звонок</button>
+        </div><a class="button header__button" href="">Сеть отелей</a><a class="header__language" href="">RU</a>
+      </div>
     </header>
-
-    <!-- BANNER -->
-
-    <section class="billboard">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="billboard__content">
-                        <div class="billboard__title">При покупке картриджа у нас и<br> установки в нашем Тех Центре получите</div>
-                        <div class="billboard__top">1 год гарантии без ограничения пробега</div>
-                        <div class="billboard__icon-wrap">
-                            <p class="billboard__icon-text">Монтаж и демонтаж на месте</p>
-                        </div>
-                        <div class="billboard__button-wrap">
-                            <button class="billboard__button">
-                                Бесплатная консультация
-                                <span class="billboard__button-icon"><img src="img/head-phone.svg" alt=""></span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section class="top">
+      <div class="top__bg"><img class="active" id="service1-img" src="img/top1.png"><img id="service2-img" src="img/top2.png"><img id="service3-img" src="img/top3.png"><img id="service4-img" src="img/top4.png"></div>
+      <div class="top__container">
+        <div class="top__items">
+          <div class="top-item top-item--active" data-block="#service1">
+            <div class="top-item__icon"><img src="img/service1.svg"></div>
+            <p class="top-item__name">Гостиничный девелопмент</p>
+          </div>
+          <div class="top-item" data-block="#service2">
+            <div class="top-item__icon"><img src="img/service2.svg"></div>
+            <p class="top-item__name">Гостиничная франшиза</p>
+          </div>
+          <div class="top-item" data-block="#service3">
+            <div class="top-item__icon"><img src="img/service3.svg"></div>
+            <p class="top-item__name">Управление и бронирование</p>
+          </div>
+          <div class="top-item" data-block="#service4">
+            <div class="top-item__icon"><img src="img/service4.svg"></div>
+            <p class="top-item__name">Гостиничный консалтинг</p>
+          </div>
         </div>
-    </section>
-
-    <!-- CATALOG -->
-
-    <section class="catalog">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-
-                    <div class="catalog__wrap">
-                        <div class="catalog__item">
-                            <div class="catalog__info">
-                                <div class="catalog__title">
-                                    <a href="#" class="catalog__link">Турбины</a>
-                                </div>
-                                <button class="orange-button">Перейти</button>
-                            </div>
-                            <div class="catalog__img">
-                                <img src="img/catalog1.png" alt="" class="img-responsive">
-                            </div>
-                        </div>
-                        <div class="catalog__item">
-                            <div class="catalog__info">
-                                <div class="catalog__title">
-                                    <a href="#" class="catalog__link">Картридж турбины</a>
-                                </div>
-                                <button class="orange-button">Перейти</button>
-                            </div>
-                            <div class="catalog__img">
-                                <img src="img/catalog2.png" alt="" class="img-responsive">
-                            </div>
-                        </div>
-                        <div class="catalog__item">
-                            <div class="catalog__info">
-                                <div class="catalog__title">
-                                    <a href="#" class="catalog__link">Клапан турбины</a>
-                                </div>
-                                <button class="orange-button">Перейти</button>
-                            </div>
-                            <div class="catalog__img">
-                                <img src="img/catalog3.png" alt="" class="img-responsive">
-                            </div>
-                        </div>
-                        <div class="catalog__item">
-                            <div class="catalog__info">
-                                <div class="catalog__title">
-                                    <a href="#" class="catalog__link">Прокладки турбины</a>
-                                </div>
-                                <button class="orange-button">Перейти</button>
-                            </div>
-                            <div class="catalog__img">
-                                <img src="img/catalog4.png" alt="" class="img-responsive">
-                            </div>
-                        </div>
-                        <div class="catalog__item">
-                            <div class="catalog__info">
-                                <div class="catalog__title">
-                                    <a href="#" class="catalog__link">Геометрия турбины</a>
-                                </div>
-                                <button class="orange-button">Перейти</button>
-                            </div>
-                            <div class="catalog__img">
-                                <img src="img/catalog5.png" alt="" class="img-responsive">
-                            </div>
-                        </div>
-                        <div class="catalog__item">
-                            <div class="catalog__info">
-                                <div class="catalog__title">
-                                    <a href="#" class="catalog__link">Ремкомплекты турбины</a>
-                                </div>
-                                <button class="orange-button">Перейти</button>
-                            </div>
-                            <div class="catalog__img">
-                                <img src="img/catalog6.png" alt="" class="img-responsive">
-                            </div>
-                        </div>
-                        <div class="catalog__item">
-                            <div class="catalog__info">
-                                <div class="catalog__title">
-                                    <a href="#" class="catalog__link">Роторы турбины</a>
-                                </div>
-                                <button class="orange-button">Перейти</button>
-                            </div>
-                            <div class="catalog__img">
-                                <img src="img/catalog7.png" alt="" class="img-responsive">
-                            </div>
-                        </div>
-                        <div class="catalog__item">
-                            <div class="catalog__info">
-                                <div class="catalog__title">
-                                    <a href="#" class="catalog__link">Корпусы турбины</a>
-                                </div>
-                                <button class="orange-button">Перейти</button>
-                            </div>
-                            <div class="catalog__img">
-                                <img src="img/catalog8.png" alt="" class="img-responsive">
-                            </div>
-                        </div>
-                        <div class="catalog__item">
-                            <div class="catalog__info">
-                                <div class="catalog__title">
-                                    <a href="#" class="catalog__link">Колесо турбины</a>
-                                </div>
-                                <button class="orange-button">Перейти</button>
-                            </div>
-                            <div class="catalog__img">
-                                <img src="img/catalog9.png" alt="" class="img-responsive">
-                            </div>
-                        </div>
-                        <div class="catalog__item">
-                            <div class="catalog__info">
-                                <div class="catalog__title">
-                                    <a href="#" class="catalog__link">Запчасти для эл. актуаторов</a>
-                                </div>
-                                <button class="orange-button">Перейти</button>
-                            </div>
-                            <div class="catalog__img">
-                                <img src="img/catalog10.png" alt="" class="img-responsive">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="top__block-wrap">
+          <div class="top-block top-block--active" id="service1">
+            <p class="top-block__title">Гостиничный девелопмент</p>
+            <p class="top-block__text">Запускаем гостиничные объекты «с нуля»: от консультации и бизнес-планирования до строительства и комплектации</p>
+            <div class="top-block__buttons"><a class="top-block__button" href="">О проектировании</a><a class="top-block__button" href="">О строительстве</a></div>
+          </div>
+          <div class="top-block" id="service2">
+            <p class="top-block__title">Гостиничная франшиза</p>
+            <p class="top-block__text">Managed by Ribas. <br/>Готовое решение для запуска бизнеса</p>
+            <div class="top-block__buttons"><a class="top-block__button" href="">Инвесторам</a><a class="top-block__button" href="">О франшизе</a></div>
+          </div>
+          <div class="top-block" id="service3">
+            <p class="top-block__title">Управление и бронирование</p>
+            <p class="top-block__text">Проводим удаленное управление каналами продаж, занимаемся маркетингом и рекламой отеля, а также бронированием и корпоративными продажами</p>
+            <div class="top-block__buttons"><a class="top-block__button" href="">Об управлении</a><a class="top-block__button" href="">Маркетинг и бронирование</a></div>
+          </div>
+          <div class="top-block" id="service4">
+            <p class="top-block__title">Гостиничный консалтинг</p>
+            <p class="top-block__text">Проводим маркетинговое исследование рынка, а также разрабатываем концепцию объекта, бизнес-планирование и архитектурный проект. Даем рекомендации, основываясь на результатах аудита</p>
+            <div class="top-block__buttons"><a class="top-block__button" href="">О консалтинге</a><a class="top-block__button" href="">Разработка <br />концепции</a><a class="top-block__button top-block__button--t10" href="">Игорный бизнес</a><a class="top-block__button top-block__button--t10" href="">Купить или <br />продать отель</a></div>
+          </div>
         </div>
+        <button class="top-play"><span class="top-play__icon"><svg width="27" height="38" viewBox="0 0 27 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 1.93534L24.5215 18.6195L0.999998 35.3038L1 1.93534Z" fill="white" stroke="white" stroke-width="2"/>
+</svg></span><span class="top-play__text">Cмотреть видео</span></button>
+      </div>
+      <button class="top__down"><img src="img/down.svg"></button>
     </section>
-
-    <!-- POPULAR -->
-
-    <section class="popular">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2 class="section-title text-center">Популярные товары</h1>
-
-                    <div class="items popular__items">
-                        <div class="items__block">
-                            <div class="items__image">
-                                <img src="img/item.png" alt="" class="img-responsive">
-                            </div>
-                            <a href="#" class="items__title">Картридж турбины K03 Kia Sorento 2.2 D4HB 197 л.с.</a>
-                            <p class="items__description">Артикул</p>
-                            <p class="items__art">218625569823</p>
-                            <div class="items__price">52 265 <span class="items__currency">руб.</span></div>
-                            <button class="items__button">Купить</button>
-                        </div>
-                        <div class="items__block">
-                            <div class="items__image">
-                                <img src="img/item.png" alt="" class="img-responsive">
-                            </div>
-                            <a href="#" class="items__title">Картридж турбины K03 Kia Sorento 2.2 D4HB 197 л.с.</a>
-                            <p class="items__description">Артикул</p>
-                            <p class="items__art">218625569823</p>
-                            <div class="items__price">52 265 <span class="items__currency">руб.</span></div>
-                            <button class="items__button">Купить</button>
-                        </div>
-                        <div class="items__block">
-                            <div class="items__image">
-                                <img src="img/item.png" alt="" class="img-responsive">
-                            </div>
-                            <a href="#" class="items__title">Картридж турбины K03 Kia Sorento 2.2 D4HB 197 л.с.</a>
-                            <p class="items__description">Артикул</p>
-                            <p class="items__art">218625569823</p>
-                            <div class="items__price">52 265 <span class="items__currency">руб.</span></div>
-                            <button class="items__button">Купить</button>
-                        </div>
-                        <div class="items__block">
-                            <div class="items__image">
-                                <img src="img/item.png" alt="" class="img-responsive">
-                            </div>
-                            <a href="#" class="items__title">Картридж турбины K03 Kia Sorento 2.2 D4HB 197 л.с.</a>
-                            <p class="items__description">Артикул</p>
-                            <p class="items__art">218625569823</p>
-                            <div class="items__price">52 265 <span class="items__currency">руб.</span></div>
-                            <button class="items__button">Купить</button>
-                        </div>
-                        <div class="items__block">
-                            <div class="items__image">
-                                <img src="img/item.png" alt="" class="img-responsive">
-                            </div>
-                            <a href="#" class="items__title">Картридж турбины K03 Kia Sorento 2.2 D4HB 197 л.с.</a>
-                            <p class="items__description">Артикул</p>
-                            <p class="items__art">218625569823</p>
-                            <div class="items__price">52 265 <span class="items__currency">руб.</span></div>
-                            <button class="items__button">Купить</button>
-                        </div>
-                        <div class="items__block">
-                            <div class="items__image">
-                                <img src="img/item.png" alt="" class="img-responsive">
-                            </div>
-                            <a href="#" class="items__title">Картридж турбины K03 Kia Sorento 2.2 D4HB 197 л.с.</a>
-                            <p class="items__description">Артикул</p>
-                            <p class="items__art">218625569823</p>
-                            <div class="items__price">52 265 <span class="items__currency">руб.</span></div>
-                            <button class="items__button">Купить</button>
-                        </div>
-                        <div class="items__block">
-                            <div class="items__image">
-                                <img src="img/item.png" alt="" class="img-responsive">
-                            </div>
-                            <a href="#" class="items__title">Картридж турбины K03 Kia Sorento 2.2 D4HB 197 л.с.</a>
-                            <p class="items__description">Артикул</p>
-                            <p class="items__art">218625569823</p>
-                            <div class="items__price">52 265 <span class="items__currency">руб.</span></div>
-                            <button class="items__button">Купить</button>
-                        </div>
-                        <div class="items__block">
-                            <div class="items__image">
-                                <img src="img/item.png" alt="" class="img-responsive">
-                            </div>
-                            <a href="#" class="items__title">Картридж турбины K03 Kia Sorento 2.2 D4HB 197 л.с.</a>
-                            <p class="items__description">Артикул</p>
-                            <p class="items__art">218625569823</p>
-                            <div class="items__price">52 265 <span class="items__currency">руб.</span></div>
-                            <button class="items__button">Купить</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section class="about" id="company">
+      <div class="about__container">
+        <h2 class="about__title">О компании</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <p>Мы, гостиничная управляющая компания Ribas Hotels Group сетью отелей. Развиваем инвестиционные проекты. Эксперт в управлении гостиничной недвижимостью. В портфель компании вошли 25 успешно действующих объектов: 3*-4* отели, санатории, базы отдыха, апартаменты и хостелы.</p>
+            <p>Мы не заложим и камня, пока не ответим себе и вам: “Где здесь прибыль: когда, сколько и каким образом окупится ваш отель?”</p>
+            <p>Потому что каждый год мы с нуля запускаем все наши курортные отели. Это то же что и запуск обычного отеля, только в три раза специфичнее и сложнее.</p>
+            <p>Если я утомил вас своей мотивирующей речью, просто посмотрите на наши проекты и напишите мне.</p>
+          </div>
+          <div class="about__right">
+            <div class="about__photo"><img src="img/about-photo.png"></div>
+            <p class="about__name">Артур Лупашко</p>
+            <p class="about__post">Основатель Ribas Hotels Group</p>
+          </div>
         </div>
+      </div>
     </section>
-
-    <!-- TEXT BLOCK -->
-
-    <section class="index-text">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1 class="text-title">Ремонт турбин</h1>
-                    <div class="text">
-                        <p>звестная международная компания «Centr Turbin» уже более 16 лет занимается ремонтом турбин разной сложности, продажей высококачественных импортных автомобильных турбокомпрессоров по демократичным ценам, а также оптовой продажей ремкомплектов для данных узлов. Мы предлагаем вам купить турбину в Украине у официального представителя широко известных во всем мире брендов-изготовителей автотурбин, среди которых Mitsubishi Turbochargers, BorgWarner, KKK, Garrett, Holset, IHI, Schwitzer, CZ.</p>
-                        <p>Мы всегда рады новому сотрудничеству с ремонтными мастерскими, так как у нас в наличии очень большой ассортимент ремкомплектов для турбинных агрегатов, у нас вы сможете найти любую деталь турбокомпрессора и осуществить его надежный ремонт.</p>
-                        <p>В «Centr Turbin» каждый заинтересованный украинский автомобилист всегда может купить турбину оригинального качества на двигатель своего автомобиля или качественно отремонтировать ее с гарантией 1 год. На сайте нашей фирмы вы найдете удобный каталог турбокомпрессоров, турбинных картриджей и прокладок. Кроме этого, к вашим услугам каталоги по подбору таких товаров как клапан турбины и изменяемая геометрия. Наши цены на картридж турбины приемлемы для любого клиента. Многие годы мы специализируемся на ремонтировании и продаже продукции вышеназванных изготовителей с мировым именем и предлагаем своим покупателям оригинальные новые модели и оригинальные запчасти для самых разных видов автотранспортных средств.</p>
-                        <p>На сегодняшний день развитие нашей организации подтверждается большим количеством благодарных автовладельцев, которые обратились к нам по таким вопросам как покупка, установка либо ремонт системы турбонагнетателя. Сейчас у нас открыты три сервисных площадки по ремонту турбин в Украине. Мы осуществляем качественные ремонтные работы по всей Украине. Наши мастерские выполняют профессиональный ремонт турбин в Киеве, Николаеве, Ивано-Франковске и Херсоне. Помимо ремонтных мастерских, мы развиваем собственную сеть фирменных СТО «Centr Turbin». Наша автомастерская по починке и обслуживанию автотурбин в 2016 году вошла в ТОП-100 лучших СТО Украины. За это мы благодарны нашим постоянным клиентам, которые голосовали за нас и подтверждали тем самым должное качество обслуживания в нашей компании.</p>
-                        <h2>Наш спектр услуг</h2>
-                        <p>Украинская компания «Centr Turbin» предлагает своим клиентам такие широко востребованные на сегодняшний день услуги:</p>
-                        <p>
-                            Продажа надежных комплектующих от проверенных фирм-производителей.<br>
-                            Реализация востребованных среди отечественных автолюбителей турбинных клапанов, картриджей и прокладок.<br>
-                            Возможность максимально выгодно продать ваш турбинный узел на нашем официальном интернет-сайте.<br>
-                            Профессиональная установка, обслуживание, замена и ремонт турбин автомобилей и отдельных составляющих оных.<br>
-                            Предоставлять все вышеперечисленные услуги на самом высоком уровне нам позволяет слаженная работа команды компетентных и опытных специалистов, а также наличие всего необходимого для выполнения поставленных задач и требований наших клиентов инструмента и оснащения.
-                        </p>
-                        <h2>Купить турбину на двигатель у нас выгодно!</h2>
-                        <p>Наша организация поставляет и продает высоконадежные турбокомпрессоры для самых разных марок автомобилей по вполне приемлемым ценам. Высокое качество реализуемого нашей компанией товара гарантировано соответственными сертификатами, которые прилагаются к каждому изделию заводом-изготовителем. Обращаем ваше внимание на то, что наша компания работает исключительно с известными и проверенными предприятиями, успешно зарекомендовавшими себя на современном рынке автомобильных запчастей и комплектующих.</p>
-                        <p>У вас имеется прекрасная возможность купить высокопроизводительный автомобильный турбокомпрессор от таких хорошо зарекомендовавших себя брендов-изготовителей как Holset, Garrett, а также Toyota, BorgWarner и прочих не менее именитых производителей. Владельцы автомобилей из Киева, Харькова, Николаева и прочих населенных пунктов нашей страны имеют возможность недорого купить различные модели турбинных изделий, которые представлены в соответствующем каталоге товаров.</p>
-                        <p>Доставка приобретенных товаров осуществляется с помощью проверенных перевозочных компаний, с их списком вы можете ознакомиться, позвонив нашему компетентному менеджеру. Уточнить наличие необходимого изделия вы также можете в режиме телефонного разговора либо с помощью остальных контактов, которые приведены в соответствующем разделе. Также необходимо напомнить, что при необходимости наши специалисты произведут установку нового оборудования в самые короткие сроки. На такой популярный сервис как установка, замена либо ремонт турбины цена у нас очень и очень доступна.</p>
-                        <h2>Чем мы будем полезны для вас?</h2>
-                        <p>Обратите внимание на краткий перечень преимуществ сотрудничества с известной отечественной компанией «Centr Turbin»:</p>
-                        <p>
-                            Мы предоставляем своим клиентам широкий ассортимент качественных товаров по приемлемым ценам;<br>
-                            Оперативная доставка заказанных товаров в любой регион Украины;<br>
-                            Большой опыт работы сотрудников компании и наличие сверхсовременного оборудования и инструмента позволяет выполнять профессиональный ремонт автомобильных турбин в короткие сроки.<br>
-                            Также обращаем ваше внимание на то, что с помощью нашего веб-сайта у каждого украинского автомобилиста есть возможность по хорошей цене продать свой турбокомпрессор. Мы найдем вам покупателя, который захочет купить ваше оборудование действительно выгодно уже в самое ближайшее время.
-                        </p>
-                    </div>
-                </div>
+    <section class="objects" id="objects">
+      <div class="objects__container">
+        <h2 class="objects__title">Наши объекты</h2>
+        <div class="objects__content">
+          <div class="objects__side">
+            <div class="objects-accordeon objects-accordeon--active" data-photos="#hotels"><span class="objects-accordeon__num">01</span>
+              <div class="objects-accordeon__title">Сеть отелей</div>
+              <div class="objects-accordeon__description" style="display: block">If you already have a business name, make that your domain. Otherwise, choose a domain name that’s short, pronounceable, and clearly communicates who you are.</div>
             </div>
+            <div class="objects-accordeon" data-photos="#franchise"><span class="objects-accordeon__num">02</span>
+              <div class="objects-accordeon__title">Франшиза</div>
+              <div class="objects-accordeon__description">If you already have a business name, make that your domain. Otherwise, choose a domain name that’s short, pronounceable, and clearly communicates who you are.</div>
+            </div>
+            <div class="objects-accordeon" data-photos="#projecting"><span class="objects-accordeon__num">03</span>
+              <div class="objects-accordeon__title">Стадия проектирования</div>
+              <div class="objects-accordeon__description">If you already have a business name, make that your domain. Otherwise, choose a domain name that’s short, pronounceable, and clearly communicates who you are.</div>
+            </div>
+            <div class="objects-accordeon" data-photos="#building"><span class="objects-accordeon__num">04</span>
+              <div class="objects-accordeon__title">Стадия строительства</div>
+              <div class="objects-accordeon__description">If you already have a business name, make that your domain. Otherwise, choose a domain name that’s short, pronounceable, and clearly communicates who you are.</div>
+            </div>
+            <div class="objects-accordeon" data-photos="#investing"><span class="objects-accordeon__num">05</span>
+              <div class="objects-accordeon__title">Инвест проекты</div>
+              <div class="objects-accordeon__description">If you already have a business name, make that your domain. Otherwise, choose a domain name that’s short, pronounceable, and clearly communicates who you are.</div>
+            </div>
+          </div>
+          <div class="objects__side">
+            <div class="objects-photos objects-photos--active" id="hotels"><a class="objects-photos__item" href=""><img src="img/obj1.png"><span>Ribas</span></a><a class="objects-photos__item" href=""><img src="img/obj2.png"><span>Friday</span></a><a class="objects-photos__item" href=""><img src="img/obj3.png"><span>Wall street</span></a><a class="objects-photos__item" href=""><img src="img/obj4.png"><span>Bortoli</span></a><a class="objects-photos__item" href=""><img src="img/obj5.png"><span>Bossfor</span></a><a class="objects-photos__item" href=""><img src="img/obj6.png"><span>Bautzen</span></a><a class="objects-photos__item" href=""><img src="img/obj7.png"><span>Ribas Bukovel</span></a></div>
+            <div class="objects-photos" id="franchise"><a class="objects-photos__item" href=""><img src="img/obj2.png"><span>Friday</span></a><a class="objects-photos__item" href=""><img src="img/obj4.png"><span>Bortoli</span></a><a class="objects-photos__item" href=""><img src="img/obj6.png"><span>Bautzen</span></a><a class="objects-photos__item" href=""><img src="img/obj7.png"><span>Ribas Bukovel</span></a></div>
+            <div class="objects-photos" id="projecting"><a class="objects-photos__item" href=""><img src="img/obj7.png"><span>Ribas Bukovel</span></a><a class="objects-photos__item" href=""><img src="img/obj5.png"><span>Bossfor</span></a><a class="objects-photos__item" href=""><img src="img/obj1.png"><span>Ribas</span></a></div>
+            <div class="objects-photos" id="building"><a class="objects-photos__item" href=""><img src="img/obj1.png"><span>Ribas</span></a></div>
+            <div class="objects-photos" id="investing"><a class="objects-photos__item" href=""><img src="img/obj3.png"><span>Wall street</span></a><a class="objects-photos__item" href=""><img src="img/obj4.png"><span>Bortoli</span></a><a class="objects-photos__item" href=""><img src="img/obj5.png"><span>Bossfor</span></a><a class="objects-photos__item" href=""><img src="img/obj6.png"><span>Bautzen</span></a><a class="objects-photos__item" href=""><img src="img/obj7.png"><span>Ribas Bukovel</span></a></div>
+          </div>
         </div>
+      </div>
     </section>
-
-    <!-- FOOTER -->
-
+    <section class="press" id="press">
+      <div class="press__container">
+        <div class="press__side">
+          <h2 class="press__title">Инвестиционные предложения</h2>
+          <div class="press__flex"><a class="press-invest" href=""><span class="press-invest__label">АРЕНДАТОРАМ</span><span class="press-invest__img"><img src="img/invest1.png"></span><span class="press-invest__name">5 star luxury appartments</span><span class="press-invest__city">Киев</span><span class="press-invest__more">
+                Подробнее<svg width="22" height="10" viewBox="0 0 22 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 4.75436H20.8178M20.8178 4.75436L17.3482 1M20.8178 4.75436L17.3482 8.50872" stroke="white" stroke-width="1.5"/>
+</svg></span></a><a class="press-invest" href=""><span class="press-invest__label">АРЕНДАТОРАМ</span><span class="press-invest__img"><img src="img/invest2.png"></span><span class="press-invest__name">5 star luxury appartments</span><span class="press-invest__city">Киев</span><span class="press-invest__more">
+                Подробнее<svg width="22" height="10" viewBox="0 0 22 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 4.75436H20.8178M20.8178 4.75436L17.3482 1M20.8178 4.75436L17.3482 8.50872" stroke="white" stroke-width="1.5"/>
+</svg></span></a><a class="press-invest" href=""><span class="press-invest__label">АРЕНДАТОРАМ</span><span class="press-invest__img"><img src="img/invest3.png"></span><span class="press-invest__name">5 star luxury appartments</span><span class="press-invest__city">Киев</span><span class="press-invest__more">
+                Подробнее<svg width="22" height="10" viewBox="0 0 22 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 4.75436H20.8178M20.8178 4.75436L17.3482 1M20.8178 4.75436L17.3482 8.50872" stroke="white" stroke-width="1.5"/>
+</svg></span></a><a class="press-invest" href=""><span class="press-invest__label">АРЕНДАТОРАМ</span><span class="press-invest__img"><img src="img/invest4.png"></span><span class="press-invest__name">5 star luxury appartments</span><span class="press-invest__city">Киев</span><span class="press-invest__more">
+                Подробнее<svg width="22" height="10" viewBox="0 0 22 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 4.75436H20.8178M20.8178 4.75436L17.3482 1M20.8178 4.75436L17.3482 8.50872" stroke="white" stroke-width="1.5"/>
+</svg></span></a></div><a class="button press__more">
+            Больше<svg width="22" height="10" viewBox="0 0 22 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 4.75436H20.8178M20.8178 4.75436L17.3482 1M20.8178 4.75436L17.3482 8.50872" stroke="white" stroke-width="1.5"/>
+</svg></a>
+        </div>
+        <div class="press__side">
+          <h2 class="press__title">Новости: интернет и СМИ</h2>
+          <div class="press__flex"><a class="press-news" href=""><span class="press-news__img"><img src="img/news1.png"></span><span class="press-news__name">Готельний бізнес Прикарпаття: готуємо сани влітку!</span><span class="press-news__description">Ribas Hotels Group успішно розвиває тризіркові і чотиризіркові готелі...</span></a><a class="press-news" href=""><span class="press-news__img"><img src="img/news2.png"></span><span class="press-news__name">Готельний бізнес Прикарпаття: готуємо сани влітку!</span><span class="press-news__description">Ribas Hotels Group успішно розвиває тризіркові і чотиризіркові готелі...</span></a></div>
+          <h2 class="press__title press__title--t50">Аналитика гостиничного бизнеса</h2>
+          <div class="press__flex"><a class="press__video" href=""><img src="img/press-video1.png"></a><a class="press__video" href=""><img src="img/press-video2.png"></a><a class="press__video" href=""><img src="img/press-video3.png"></a></div><a class="button press__more">
+            Больше<svg width="22" height="10" viewBox="0 0 22 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 4.75436H20.8178M20.8178 4.75436L17.3482 1M20.8178 4.75436L17.3482 8.50872" stroke="white" stroke-width="1.5"/>
+</svg></a>
+        </div>
+      </div>
+    </section>
+    <section class="contacts">
+      <div class="contacts__container">
+        <h2 class="contacts__title">Узнать больше</h2>
+        <div class="contacts__flex">
+          <div class="contacts__side">
+            <form class="contacts-form">
+              <input class="contacts-form__input" type="text" placeholder="Email">
+              <input class="contacts-form__input" type="text" placeholder="Как к Вам обращаться?">
+              <button class="button contacts-form__button">
+                Отправить<svg width="22" height="10" viewBox="0 0 22 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 4.75436H20.8178M20.8178 4.75436L17.3482 1M20.8178 4.75436L17.3482 8.50872" stroke="white" stroke-width="1.5"/>
+</svg>
+              </button>
+            </form>
+          </div>
+          <div class="contacts__side">
+            <div class="contacts__flex">
+              <div class="contacts-soc">
+                <div class="contacts-soc__icon"><img src="img/contacts-tg.png"></div>
+                <p class="contacts-soc__text">Telegram - что можно найти, ценность канала.</p>
+              </div>
+              <div class="contacts-soc">
+                <div class="contacts-soc__icon"><img src="img/contacts-insta.png"></div>
+                <p class="contacts-soc__text">Instagram - что можно найти, ценность ,блога.</p>
+              </div>
+              <div class="contacts-soc">
+                <div class="contacts-soc__icon"><img src="img/contacts-fb.png"></div>
+                <p class="contacts-soc__text">Facebook - что можно найти, ценность ,блога.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER-->
     <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="footer__wrap">
-                        <div class="footer__credits">
-                            <div class="footer__logo"><img src="img/footer-logo.png" alt="" class="img-responsive"></div>
-                            <div class="footer__credit-block">
-                                <span class="header__worktime">Ежедневно с 9:00 до 19:00</span>
-                                <a href="#" class="header__phone footer__phone">+7 (495) 127-76-62</a>
-                            </div>
-                            <div class="footer__credit-block">
-                                <p class="footer__address">г. Москва, завод МЕТРОМАШ, ул. Тагильская, дом 4, стр. 4</p>
-                            </div>
-                        </div>
-                        <div class="footer__middle">
-                            <div class="footer__menu-title">Навигация</div>
-                            <div class="footer__menu footer__menu--columns">
-                                <a href="#" class="footer__menu-link">Турбины</a>
-                                <a href="#" class="footer__menu-link">Картриджи</a>
-                                <a href="#" class="footer__menu-link">Клапаны турбин</a>
-                                <a href="#" class="footer__menu-link">Прокладки турбин</a>
-                                <a href="#" class="footer__menu-link">Геометрии турбин</a>
-                                <a href="#" class="footer__menu-link">Ремонт турбин</a>
-                                <a href="#" class="footer__menu-link">Каталог турбин</a>
-                            </div>
-                        </div>
-                        <div class="footer__right">
-                            <div class="footer__info-menu">
-                                <div class="footer__menu-title">Информация</div>
-                                <div class="footer__menu">
-                                    <a href="#" class="footer__menu-link">Возврат</a>
-                                    <a href="#" class="footer__menu-link">Доставка</a>
-                                    <a href="#" class="footer__menu-link">Ремонт турбин</a>
-                                    <a href="#" class="footer__menu-link">Контакты</a>
-                                </div>
-                            </div>
-                            <div class="footer__insta">
-                                <a href="#" class="footer__insta-link">
-                                    <img src="img/insta.svg" alt="" class="img-responsive">
-                                    <span class="footer__insta-text">Мы в Instagram</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="footer__container">
+        <div class="footer__column"><a class="footer__logo" href=""><img src="img/logo.svg"></a></div>
+        <div class="footer__column">
+          <p class="footer__title footer__title--grey">Ribas hotels group</p><a class="footer__link scroll-to" href="#company">О компании</a><a class="footer__link scroll-to" href="#objects">Наши объекты</a><a class="footer__link scroll-to" href="#press">Инвестиционные предложения</a><a class="footer__link scroll-to" href="#press">Новости</a><a class="footer__link scroll-to" href="#contacts">Контакты</a>
         </div>
-        <div class="footer__bottom">
-            <a href="#" class="footer__bottom-link">Карта сайта</a>
-            <a href="#" class="footer__bottom-link">Политика конфиденциальности</a>
+        <div class="footer__column">
+          <p class="footer__title">Услуги</p><a class="footer__link" href="">Гостиничный девелопмент</a><a class="footer__link" href="">Гостиничная франшиза</a><a class="footer__link" href="">Управление и бронирование</a><a class="footer__link" href="">Гостиничный консалтинг</a>
         </div>
+        <div class="footer__column">
+          <p class="footer__title">Контакты</p><a class="footer__link" href="tel:+38 (048) 783-58-77">+38 (048) 783-58-77</a>
+          <p class="footer__link">Украина, Одесса, пр. Гагарина, 25</p><a class="footer__link" href="mailto:ribashotelsgroup@gmail.com">ribashotelsgroup@gmail.com</a>
+          <div class="header-socials"><a class="header-socials__item" href=""><img src="img/fb.svg"></a><a class="header-socials__item" href=""><img src="img/insta.svg"></a></div><a class="button footer__button" href="">Сеть отелей</a>
+        </div>
+        <button class="footer__up"><svg width="22" height="42" viewBox="0 0 22 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11 42L11 2M11 2L0.999999 8.66667M11 2L21 8.66666" stroke="#A6A6A6" stroke-width="3"/>
+</svg>
+        </button>
+      </div>
     </footer>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/slick.js"></script>
-    <script type="text/javascript" src="js/scripts.js"></script>
-</body>
+    <!-- SCRIPTS--><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/scripts.js"></script>
+  </body>
 </html>

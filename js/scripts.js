@@ -1,102 +1,46 @@
 $(document).ready(function() {
-    var banner_top = $('.billboard').offset().top;
-    catalogResponsive();
 
-    $(window).resize(function() {
-        banner_top = $('.billboard').offset().top;
-
-        catalogResponsive();
-    });
-
-    $(window).scroll(function() {
-        var ww = $(window).width();
-
-        if (ww < 768) {
-            var scrollTop = $(window).scrollTop();
-
-            if (scrollTop >= banner_top) {
-                $('.mobile-header').addClass('mobile-header--show');
-                $('.header__top-menu-wrap').addClass('header__top-menu-wrap--scroll');
-            }
-            else {
-                $('.header__top-menu-wrap').removeClass('header__top-menu-wrap--scroll');
-                $('.mobile-header').removeClass('mobile-header--show');
-            }
-        }
-        else {
-            $('.header__top-menu-wrap--scroll').removeClass('header__top-menu-wrap--scroll');
-            $('.mobile-header--show').removeClass('mobile-header--show');
-        }
-    });
-
-    $('.category__list').click(function(e) {
+    $('.scroll-to').click(function(e) {
         e.preventDefault();
-        $(this).toggleClass('category__list--opened');
+        var block = $(this).attr('href');
+        $('html, body').animate({scrollTop: $(block).offset().top + 'px'});
     });
 
-    // results
-
-    $('.result__table').on('click', '.result-minus', function() {
-        var count = $(this).next().text();
-        if (parseInt(count) > 0) {
-            $(this).next().text(count-1);
-        }
-    });
-
-    $('.result__table').on('click', '.result-plus', function() {
-        var count = parseInt($(this).prev().text());
-        $(this).prev().text(count+1);
-    });
-
-    $('.result__table').on('click', '.result__info', function () {
-        location.href = $(this).find('a').attr('href');
-    });
-    
-    $('.result__table').on('click', '.result__similar', function () {
-        location.href = $(this).prev().find('a').attr('href');
-    });
-
-    $('.result__label').click(function() {
-        if ($(this).hasClass('result__label--opened')) {
-            $(this).removeClass('result__label--opened');
-            $(this).text('Показать комплектующие');
-            $(this).next().slideUp();
-        }
-        else {
-            $(this).addClass('result__label--opened');
-            $(this).text('Комплектующие');
-            $(this).next().slideDown();
-        }
-    });
-
-    $('.header__menu-link--catalog').click(function(e) {
+    $('.top__down').click(function(e) {
         e.preventDefault();
-        e.stopPropagation();
-        $(this).toggleClass('header__menu-link--active');
+        $('html, body').animate({scrollTop: $('#company').offset().top + 'px'});
     });
 
-    if ($(window).width() < 768) {
-        $('.header__menu-link--opening').click(function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-            $(this).toggleClass('header__menu-link--active');
-        });
-    }
+    $('.top-item').click(function(e) {
+        var block = $(this).attr('data-block');
 
-    $('body').click(function() {
-        $('.header__menu-link--catalog').removeClass('header__menu-link--active');
+        $('.top-block--active').removeClass('top-block--active');
+        $('.top-item--active').removeClass('top-item--active');
+        $('.top__bg .active').removeClass('active');
+        $(block + '-img').addClass('active');
+        $(block).addClass('top-block--active');
+        $(this).addClass('top-item--active');
     });
+
+    $('.objects-accordeon__title').click(function(e) {
+        $('.objects-accordeon--active .objects-accordeon__description').slideUp(300);
+        if (!$(this).parents('.objects-accordeon').hasClass('objects-accordeon--active')) {
+            $('.objects-accordeon--active').removeClass('objects-accordeon--active');
+
+            // photos
+
+            var photos = $(this).parents('.objects-accordeon').attr('data-photos');
+            $('.objects-photos--active').removeClass('objects-photos--active');
+            $(photos).addClass('objects-photos--active');
+        }
+        $(this).parents('.objects-accordeon').toggleClass('objects-accordeon--active');
+        $('.objects-accordeon--active .objects-accordeon__description').slideToggle(300);
+    });
+
+    $('.footer__up').click(function(e) {
+        e.preventDefault();
+        $('html, body').animate({scrollTop: 0});
+    });
+
 });
 
-function catalogResponsive() {
-    if ($(window).width() < 768) {
-        $('.category__content').append($('.category__left-label'));
-        $('.category__content').append($('.category__list-block'));
-        $('.category__content').append($('.category__left-remont'));
-    }
-    else {
-        $('.category__filter').append($('.category__left-label'));
-        $('.category__filter').append($('.category__list-block'));
-        $('.category__filter').append($('.category__left-remont'));
-    }
-}
