@@ -42,5 +42,19 @@ $(document).ready(function() {
         $('html, body').animate({scrollTop: 0});
     });
 
+    // responsive
+
+    if ($(window).width() < 768) {
+        $('.objects-photos').each(function() {
+            var id = $(this).attr('id');
+            $(this).appendTo($('.objects-accordeon[data-photos="#'+id+'"] .objects-accordeon__description'));
+        });
+    }
+
+    $('.header__mobile-button').click(function(e) {
+        e.preventDefault();
+        $('.header').toggleClass('header--active');
+    });
+
 });
 
