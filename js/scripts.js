@@ -53,6 +53,7 @@ $(document).ready(function() {
 
     $('.header__mobile-button').click(function(e) {
         e.preventDefault();
+        $('body').toggleClass('frozen');
         $('.header').toggleClass('header--active');
     });
 
