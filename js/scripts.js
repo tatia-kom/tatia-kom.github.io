@@ -49,6 +49,11 @@ $(document).ready(function() {
             var id = $(this).attr('id');
             $(this).appendTo($('.objects-accordeon[data-photos="#'+id+'"] .objects-accordeon__description'));
         });
+
+        $('.about__title').click(function(e) {
+            $(this).toggleClass('about__title--active');
+            $('.about__content').slideToggle();
+        });
     }
 
     $('.header__mobile-button').click(function(e) {
