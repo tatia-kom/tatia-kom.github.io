@@ -1,219 +1,364 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
   <head>
-    <meta http-equiv="text/html" charset="utf-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ribas</title>
+    <title>Bidgood</title>
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
   </head>
   <body>
-    <!-- HEADER-->
-    <header class="header">
-      <div class="header__container"><a class="header__logo" href=""><img src="img/logo.svg"></a>
-        <nav class="header-menu"><a class="header-menu__item scroll-to" href="#company">О&nbsp;компании</a><a class="header-menu__item scroll-to" href="#objects">Наши объекты</a><a class="header-menu__item scroll-to" href="#press">Инвестиционные предложения</a><a class="header-menu__item scroll-to" href="#press">Новости</a><a class="header-menu__item" href="">Блог</a><a class="header-menu__item scroll-to" href="#contacts">Контакты</a></nav>
-        <div class="header-socials"><a class="header-socials__item" href="https://fb.com/ribasgroup" target="_blank"><img src="img/fb.svg"></a><a class="header-socials__item" href="https://www.youtube.com/channel/UCaJGpS0aOcUeYP7MhHkXjCA" target="_blank"><img src="img/yt.png"></a></div>
-        <div class="header-connect"><a class="header-connect__phone" href="tel:+380487064736">+380487064736</a>
-          <button class="header-connect__button">Обратный звонок</button>
-        </div><a class="button header__button" href="">Сеть отелей</a><a class="header__language" href="">RU</a>
-        <button class="header__mobile-button"><span></span><span></span><span></span></button>
-      </div>
-    </header>
     <section class="top">
-      <div class="top__bg"><img class="active" id="service1-img" src="img/top1.png"><img id="service2-img" src="img/top2.png"><img id="service3-img" src="img/top3.png"><img id="service4-img" src="img/top4.png"></div>
-      <div class="top__container">
-        <div class="top__scroll">
-          <div class="top__items">
-            <div class="top-item top-item--active" data-block="#service1">
-              <div class="top-item__icon"><img src="img/service1.svg"></div>
-              <p class="top-item__name">Гостиничный девелопмент</p>
-            </div>
-            <div class="top-item" data-block="#service2">
-              <div class="top-item__icon"><img src="img/service2.svg"></div>
-              <p class="top-item__name">Гостиничная франшиза</p>
-            </div>
-            <div class="top-item" data-block="#service3">
-              <div class="top-item__icon"><img src="img/service3.svg"></div>
-              <p class="top-item__name">Управление и бронирование</p>
-            </div>
-            <div class="top-item" data-block="#service4">
-              <div class="top-item__icon"><img src="img/service4.svg"></div>
-              <p class="top-item__name">Гостиничный консалтинг</p>
+      <!-- HEADER-->
+      <header class="header">
+        <div class="container">
+          <div class="header__flex">
+            <div class="header__logo"><img src="img/logo.svg" alt=""><span>BIDGOOD</span></div>
+            <button class="header__mobile-menu"><span></span></button>
+            <nav class="header-menu"><a class="header-menu__link" href="">WIKI</a><a class="header-menu__link" href="">TELEGRAM</a><a class="header-menu__link" href="">BLOG</a></nav>
+            <div class="header__buttons">
+              <button class="button button--sign button--bordered open-modal" data-modal="#signIn">Sign In</button>
+              <button class="button button--sign open-modal" data-modal="#signUp">Sign Up</button>
             </div>
           </div>
         </div>
-        <div class="top__block-wrap">
-          <div class="top-block top-block--active" id="service1">
-            <p class="top-block__title">Гостиничный девелопмент</p>
-            <p class="top-block__text">Запускаем гостиничные объекты «с нуля»: от консультации и бизнес-планирования до строительства и комплектации</p>
-            <div class="top-block__buttons"><a class="top-block__button" href="">О проектировании</a><a class="top-block__button" href="">О строительстве</a></div>
-          </div>
-          <div class="top-block" id="service2">
-            <p class="top-block__title">Гостиничная франшиза</p>
-            <p class="top-block__text">Managed by Ribas. <br/>Готовое решение для запуска бизнеса</p>
-            <div class="top-block__buttons"><a class="top-block__button" href="">Инвесторам</a><a class="top-block__button" href="">О франшизе</a></div>
-          </div>
-          <div class="top-block" id="service3">
-            <p class="top-block__title">Управление и бронирование</p>
-            <p class="top-block__text">Проводим удаленное управление каналами продаж, занимаемся маркетингом и рекламой отеля, а также бронированием и корпоративными продажами</p>
-            <div class="top-block__buttons"><a class="top-block__button" href="">Об управлении</a><a class="top-block__button" href="">Маркетинг и бронирование</a></div>
-          </div>
-          <div class="top-block" id="service4">
-            <p class="top-block__title">Гостиничный консалтинг</p>
-            <p class="top-block__text">Проводим маркетинговое исследование рынка, а также разрабатываем концепцию объекта, бизнес-планирование и архитектурный проект. Даем рекомендации, основываясь на результатах аудита</p>
-            <div class="top-block__buttons"><a class="top-block__button" href="">О консалтинге</a><a class="top-block__button" href="">Разработка <br />концепции</a><a class="top-block__button top-block__button--t10" href="">Игорный бизнес</a><a class="top-block__button top-block__button--t10" href="">Купить или <br />продать отель</a></div>
-          </div>
-        </div>
-        <button class="top-play"><span class="top-play__icon"><svg width="27" height="38" viewBox="0 0 27 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M1 1.93534L24.5215 18.6195L0.999998 35.3038L1 1.93534Z" fill="white" stroke="white" stroke-width="2"/>
-</svg></span><span class="top-play__text">Cмотреть видео</span></button>
-      </div>
-      <button class="top__down"><img src="img/down.svg"></button>
-    </section>
-    <section class="about" id="company">
-      <div class="about__container">
-        <h2 class="about__title">
-          О компании<svg width="30" height="18" viewBox="0 0 30 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M2 2L15 15L28 2" stroke="white" stroke-opacity="0.25" stroke-width="3" stroke-linecap="round"/>
-</svg>
-        </h2>
-        <div class="about__content">
-          <div class="about__text">
-            <p>Мы, <strong>Гостиничная управляющая компания сетью отелей Ribas Hotels Group</strong>. Развиваем инвестиционные проекты. Эксперт в управлении гостиничной недвижимостью. В портфель компании вошли 25 успешно действующих объектов: 3*-4* отели, санатории, базы отдыха, апартаменты и хостелы.</p>
-            <p>Мы не заложим и камня, пока не ответим себе и вам: “Где здесь прибыль: когда, сколько и каким образом окупится ваш отель?”</p>
-            <p>Потому что каждый год мы с нуля запускаем все наши курортные отели. Это то же что и запуск обычного отеля, только в три раза специфичнее и сложнее.</p>
-            <p>Если я утомил вас своей мотивирующей речью, просто посмотрите на наши проекты и напишите мне.</p>
-          </div>
-          <div class="about__right">
-            <div class="about__photo"><img src="img/about-photo.png"></div>
-            <p class="about__name">Артур Лупашко</p>
-            <p class="about__post">Основатель Ribas Hotels Group</p>
-          </div>
+      </header>
+      <div class="top__left"><img src="img/top-left.svg" alt=""></div>
+      <div class="top__img"><img src="img/top.svg" alt=""></div>
+      <div class="container">
+        <div class="top__content">
+          <h1 class="top__title">Cryptocurrency</h1>
+          <h2 class="top__subtitle">Investing on Autopilot</h2>
+          <p class="text">Bidgood is a customizable cryptocurrency trading bot that enables users to index the market, create custom portfolios, and automatically rebalance their cryptocurrency portfolios.</p>
+          <button class="button">Get started</button>
         </div>
       </div>
     </section>
-    <section class="objects" id="objects">
-      <div class="objects__container">
-        <h2 class="objects__title">Наши объекты</h2>
-        <div class="objects__content">
-          <div class="objects__side">
-            <div class="objects-accordeon objects-accordeon--active" data-photos="#hotels"><span class="objects-accordeon__num">01</span>
-              <div class="objects-accordeon__title">Сеть отелей</div>
-              <div class="objects-accordeon__description" style="display: block">If you already have a business name, make that your domain. Otherwise, choose a domain name that’s short, pronounceable, and clearly communicates who you are.</div>
-            </div>
-            <div class="objects-accordeon" data-photos="#franchise"><span class="objects-accordeon__num">02</span>
-              <div class="objects-accordeon__title">Франшиза</div>
-              <div class="objects-accordeon__description">If you already have a business name, make that your domain. Otherwise, choose a domain name that’s short, pronounceable, and clearly communicates who you are.</div>
-            </div>
-            <div class="objects-accordeon" data-photos="#projecting"><span class="objects-accordeon__num">03</span>
-              <div class="objects-accordeon__title">Стадия проектирования</div>
-              <div class="objects-accordeon__description">If you already have a business name, make that your domain. Otherwise, choose a domain name that’s short, pronounceable, and clearly communicates who you are.</div>
-            </div>
-            <div class="objects-accordeon" data-photos="#building"><span class="objects-accordeon__num">04</span>
-              <div class="objects-accordeon__title">Стадия строительства</div>
-              <div class="objects-accordeon__description">If you already have a business name, make that your domain. Otherwise, choose a domain name that’s short, pronounceable, and clearly communicates who you are.</div>
-            </div>
-            <div class="objects-accordeon" data-photos="#investing"><span class="objects-accordeon__num">05</span>
-              <div class="objects-accordeon__title">Инвест проекты</div>
-              <div class="objects-accordeon__description">If you already have a business name, make that your domain. Otherwise, choose a domain name that’s short, pronounceable, and clearly communicates who you are.</div>
+    <section class="bot">
+      <div class="bot__img"><img src="img/bot.svg" alt=""><img src="img/bot.png" alt=""></div>
+      <div class="container">
+        <div class="bot__content">
+          <h2 class="title">Your Personal <br/>Crypto Trading Bot</h2>
+          <p class="text">Grow your portfolio like the world's most sophisticated investors. We're making institutional portfolio management software available to everyone.</p>
+          <p class="text text--bold">Bidgood is free to try for the first 7-days. A paid subscription starts at only $3/month.</p>
+          <button class="button">Get started</button>
+        </div>
+      </div>
+    </section>
+    <section class="steps">
+      <div class="container">
+        <h2 class="title title--center">How to Get Started</h2>
+        <div class="steps__flex">
+          <div class="steps-item">
+            <div class="steps-item__bg"><img src="img/step1.svg" alt=""></div>
+            <div class="steps-item__content"><img src="img/step1-icon.svg" alt="">
+              <p class="steps-item__name">Connect Exchange</p>
+              <p class="steps-item__description">Connect Bidgood  to your exchange. <br />API keys are securely encrypted <br />(HMAC SHA-256).</p>
             </div>
           </div>
-          <div class="objects__side">
-            <div class="objects-photos objects-photos--active" id="hotels"><a class="objects-photos__item" href=""><img src="img/obj1.png"><span>Ribas</span></a><a class="objects-photos__item" href=""><img src="img/obj2.png"><span>Friday</span></a><a class="objects-photos__item" href=""><img src="img/obj3.png"><span>Wall street</span></a><a class="objects-photos__item" href=""><img src="img/obj4.png"><span>Bortoli</span></a><a class="objects-photos__item" href=""><img src="img/obj5.png"><span>Bossfor</span></a><a class="objects-photos__item" href=""><img src="img/obj6.png"><span>Bautzen</span></a><a class="objects-photos__item" href=""><img src="img/obj7.png"><span>Ribas Bukovel</span></a></div>
-            <div class="objects-photos" id="franchise"><a class="objects-photos__item" href=""><img src="img/obj2.png"><span>Friday</span></a><a class="objects-photos__item" href=""><img src="img/obj4.png"><span>Bortoli</span></a><a class="objects-photos__item" href=""><img src="img/obj6.png"><span>Bautzen</span></a><a class="objects-photos__item" href=""><img src="img/obj7.png"><span>Ribas Bukovel</span></a></div>
-            <div class="objects-photos" id="projecting"><a class="objects-photos__item" href=""><img src="img/obj7.png"><span>Ribas Bukovel</span></a><a class="objects-photos__item" href=""><img src="img/obj5.png"><span>Bossfor</span></a><a class="objects-photos__item" href=""><img src="img/obj1.png"><span>Ribas</span></a></div>
-            <div class="objects-photos" id="building"><a class="objects-photos__item" href=""><img src="img/obj1.png"><span>Ribas</span></a></div>
-            <div class="objects-photos" id="investing"><a class="objects-photos__item" href=""><img src="img/obj3.png"><span>Wall street</span></a><a class="objects-photos__item" href=""><img src="img/obj4.png"><span>Bortoli</span></a><a class="objects-photos__item" href=""><img src="img/obj5.png"><span>Bossfor</span></a><a class="objects-photos__item" href=""><img src="img/obj6.png"><span>Bautzen</span></a><a class="objects-photos__item" href=""><img src="img/obj7.png"><span>Ribas Bukovel</span></a></div>
+          <div class="steps-item">
+            <div class="steps-item__bg"><img src="img/step2.svg" alt=""></div>
+            <div class="steps-item__content"><img src="img/step2-icon.svg" alt="">
+              <p class="steps-item__name">Create or select strategy</p>
+              <p class="steps-item__description">Create a custom portfolio based <br />on advanced metrics or implement <br />an existing strategy.</p>
+            </div>
+          </div>
+          <div class="steps-item">
+            <div class="steps-item__bg"><img src="img/step3.svg" alt=""></div>
+            <div class="steps-item__content"><img src="img/step3-icon.svg" alt="">
+              <p class="steps-item__name">Automatically Rebalance</p>
+              <p class="steps-item__description">Bidgood keeps your portfolio <br />on track by automatically executing <br />portfolio rebalances.</p>
+            </div>
+          </div>
+        </div>
+        <p class="steps__note">So you're new to Bidgood? No problem.</p>
+        <button class="button">try it now</button>
+      </div>
+    </section>
+    <section class="pricing">
+      <div class="container">
+        <h2 class="title title--center">Pricing</h2>
+        <p class="pricing__description">Bidgood pricing is tiered based on your portfolio size inorder to keep <br />our service affordable for those with smaller account sizes.</p>
+        <div class="pricing__flex">
+          <div class="pricing-item">
+            <p class="pricing-item__name">Silver</p>
+            <p class="pricing-item__price">$<span>3</span>/month</p>
+            <p class="pricing-item__label">Account Value<strong>Under $500</strong></p>
+            <button class="button">Buy now</button>
+          </div>
+          <div class="pricing-item pricing-item--big">
+            <p class="pricing-item__name">Bronze</p>
+            <p class="pricing-item__price">$<span>6</span>/month</p>
+            <p class="pricing-item__label">Account Value<strong>$500 - $1,000</strong></p>
+            <button class="button">Buy now</button>
+          </div>
+          <div class="pricing-item">
+            <p class="pricing-item__name">Gold</p>
+            <p class="pricing-item__price">$<span>14</span>/month</p>
+            <p class="pricing-item__label">Account Value<strong>Over $1000</strong></p>
+            <button class="button">Buy now</button>
           </div>
         </div>
       </div>
     </section>
-    <section class="press" id="press">
-      <div class="press__container">
-        <div class="press__side">
-          <h2 class="press__title">Инвестиционные предложения</h2>
-          <div class="press__flex press__flex--tablet_sb"><a class="press-invest" href=""><span class="press-invest__label">АРЕНДАТОРАМ</span><span class="press-invest__img"><img src="img/invest1.png"></span><span class="press-invest__name">5 star luxury appartments</span><span class="press-invest__city">Киев</span><span class="press-invest__more">
-                Подробнее<svg width="22" height="10" viewBox="0 0 22 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0 4.75436H20.8178M20.8178 4.75436L17.3482 1M20.8178 4.75436L17.3482 8.50872" stroke="white" stroke-width="1.5"/>
-</svg></span></a><a class="press-invest" href=""><span class="press-invest__label">АРЕНДАТОРАМ</span><span class="press-invest__img"><img src="img/invest2.png"></span><span class="press-invest__name">5 star luxury appartments</span><span class="press-invest__city">Киев</span><span class="press-invest__more">
-                Подробнее<svg width="22" height="10" viewBox="0 0 22 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0 4.75436H20.8178M20.8178 4.75436L17.3482 1M20.8178 4.75436L17.3482 8.50872" stroke="white" stroke-width="1.5"/>
-</svg></span></a><a class="press-invest" href=""><span class="press-invest__label">АРЕНДАТОРАМ</span><span class="press-invest__img"><img src="img/invest3.png"></span><span class="press-invest__name">5 star luxury appartments</span><span class="press-invest__city">Киев</span><span class="press-invest__more">
-                Подробнее<svg width="22" height="10" viewBox="0 0 22 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0 4.75436H20.8178M20.8178 4.75436L17.3482 1M20.8178 4.75436L17.3482 8.50872" stroke="white" stroke-width="1.5"/>
-</svg></span></a><a class="press-invest" href=""><span class="press-invest__label">АРЕНДАТОРАМ</span><span class="press-invest__img"><img src="img/invest4.png"></span><span class="press-invest__name">5 star luxury appartments</span><span class="press-invest__city">Киев</span><span class="press-invest__more">
-                Подробнее<svg width="22" height="10" viewBox="0 0 22 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0 4.75436H20.8178M20.8178 4.75436L17.3482 1M20.8178 4.75436L17.3482 8.50872" stroke="white" stroke-width="1.5"/>
-</svg></span></a></div><a class="button press__more">
-            Больше<svg width="22" height="10" viewBox="0 0 22 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0 4.75436H20.8178M20.8178 4.75436L17.3482 1M20.8178 4.75436L17.3482 8.50872" stroke="white" stroke-width="1.5"/>
-</svg></a>
+    <section class="methodology">
+      <div class="methodology__img"><img src="img/methodology.svg" alt=""><img src="img/methodology.png" alt=""></div>
+      <div class="container">
+        <p class="title">Cryptocurrency Indices</p>
+        <p class="text text--bold">Diversify Across the Entire Market with One Click</p>
+        <p class="text">Diversification mitigates risk and improves returns. Studies found that 95% of active traders fail to beat the index. We built the HODL indices for users who want to diversify across the market instead of picking individual coins.</p>
+        <button class="button">red methodology</button>
+      </div>
+      <div class="portfolios">
+        <div class="portfolios__img"><img src="img/portfolios.svg" alt=""><img src="img/portfolios.png" alt=""></div>
+        <div class="container">
+          <div class="portfolios__content">
+            <p class="title">Customized Portfolios</p>
+            <p class="text text--bold">Create Portfolios with Advanced Market Metrics</p>
+            <p class="text">Select any coins, choose a weighting strategy, and see how it performed in the past. Use advanced market metrics to construct dynamic portfolios. You can also create a cryptocurrency index comprised of the top N coins.</p>
+            <button class="button">how it works</button>
+          </div>
         </div>
-        <div class="press__side">
-          <h2 class="press__title">Новости: интернет и СМИ</h2>
-          <div class="press__flex"><a class="press-news" href=""><span class="press-news__img"><img src="img/news1.png"></span><span class="press-news__name">Готельний бізнес Прикарпаття: готуємо сани влітку!</span><span class="press-news__description">Ribas Hotels Group успішно розвиває тризіркові і чотиризіркові готелі...</span></a><a class="press-news" href=""><span class="press-news__img"><img src="img/news2.png"></span><span class="press-news__name">Готельний бізнес Прикарпаття: готуємо сани влітку!</span><span class="press-news__description">Ribas Hotels Group успішно розвиває тризіркові і чотиризіркові готелі...</span></a></div>
-          <h2 class="press__title press__title--t50">Аналитика гостиничного бизнеса</h2>
-          <div class="press__flex"><a class="press__video" href=""><img src="img/press-video1.png"></a><a class="press__video" href=""><img src="img/press-video2.png"></a><a class="press__video" href=""><img src="img/press-video3.png"></a></div><a class="button press__more">
-            Больше<svg width="22" height="10" viewBox="0 0 22 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0 4.75436H20.8178M20.8178 4.75436L17.3482 1M20.8178 4.75436L17.3482 8.50872" stroke="white" stroke-width="1.5"/>
-</svg></a>
+      </div>
+      <div class="rebalancing">
+        <div class="rebalancing__img"><img src="img/rebalancing.svg" alt=""><img src="img/rebalancing.png" alt=""></div>
+        <div class="container">
+          <div class="rebalancing__content">
+            <p class="title">Automatic Rebalancing</p>
+            <p class="text text--bold">Rebalances Keep Your Portfolio on Track.</p>
+            <p class="text">When the market shifts, a portfolio will drift away from its target allocation. Bidgood  automatically rebalances your portfolio to keep it on track, saving you time. Portfolio rebalances generally lead to risk mitigation and improved returns.</p>
+            <button class="button">rebalancing study</button>
+          </div>
+        </div>
+      </div>
+      <div class="needs">
+        <div class="needs__img"><img src="img/needs.svg" alt=""><img src="img/needs.png" alt=""></div>
+        <div class="container">
+          <div class="needs__content">
+            <p class="title">Tailored to Your Needs</p>
+            <p class="text text--bold">Customize HodlBot to Fit your Preferences.</p>
+            <p class="text">Change your rebalancing frequency, blacklist coins you want to avoid trading, liquidate your assets anytime. Bidgood is highly customizable. On top of that, we provide 24/7 customer support.</p>
+            <button class="button">Eхplore wiki</button>
+          </div>
         </div>
       </div>
     </section>
-    <section class="contacts">
-      <div class="contacts__container">
-        <h2 class="contacts__title">Узнать больше</h2>
-        <div class="contacts__flex">
-          <div class="contacts__side">
-            <form class="contacts-form">
-              <input class="contacts-form__input" type="text" placeholder="Email">
-              <input class="contacts-form__input" type="text" placeholder="Как к Вам обращаться?">
-              <button class="button contacts-form__button">
-                Отправить<svg width="22" height="10" viewBox="0 0 22 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0 4.75436H20.8178M20.8178 4.75436L17.3482 1M20.8178 4.75436L17.3482 8.50872" stroke="white" stroke-width="1.5"/>
-</svg>
-              </button>
-            </form>
+    <section class="how">
+      <div class="container">
+        <h2 class="title title--center">How it Works</h2>
+        <p class="how__description">Bidgood simplifies the trading experience by making it possible <br />to manage your portfolio without interfacing directly with exchanges.</p>
+        <div class="how__img"><img src="img/how2.png" alt=""><img src="img/how1.png" alt=""></div>
+        <div class="how__flex">
+          <div class="how-item"><img src="img/how-item1.svg" alt="">
+            <p class="how-item__num">50M<small>+</small></p>
+            <p class="how-item__text">Trading Volume</p>
           </div>
-          <div class="contacts__side">
-            <div class="contacts__flex">
-              <div class="contacts-soc">
-                <div class="contacts-soc__icon"><img src="img/contacts-tg.png"></div>
-                <p class="contacts-soc__text">Telegram - что можно найти, ценность канала.</p>
+          <div class="how-item"><img src="img/how-item2.svg" alt="">
+            <p class="how-item__num">400k<small>+</small></p>
+            <p class="how-item__text">Transactions</p>
+          </div>
+          <div class="how-item"><img src="img/how-item3.svg" alt="">
+            <p class="how-item__num">10k<small>+</small></p>
+            <p class="how-item__text">Happy Users</p>
+          </div>
+          <div class="how-item"><img src="img/how-item4.svg" alt="">
+            <p class="how-item__num">20k<small>+</small></p>
+            <p class="how-item__text">Portfolios Created</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="customers">
+      <div class="container">
+        <h2 class="title title--center">Join Thousands of Happy Customers</h2>
+        <p class="customers__description">Want to talk to active users? Join our 600+ member Telegram group.</p>
+        <div class="customers__slider">
+          <div class="customers__slide">
+            <div class="customers-card">
+              <div class="customers-card__top">
+                <div class="customers-card__ava"><img src="img/ava1.png" alt=""></div>
+                <div class="customers-card__user">
+                  <p class="customers-card__name">Marleah Eagleston</p>
+                  <p class="customers-card__post">Founder at Spicenet</p>
+                </div><a class="customers-card__icon" href=""><img src="img/twitter.svg" alt=""></a>
               </div>
-              <div class="contacts-soc">
-                <div class="contacts-soc__icon"><img src="img/contacts-insta.png"></div>
-                <p class="contacts-soc__text">Instagram - что можно найти, ценность ,блога.</p>
-              </div>
-              <div class="contacts-soc">
-                <div class="contacts-soc__icon"><img src="img/contacts-fb.png"></div>
-                <p class="contacts-soc__text">Facebook - что можно найти, ценность ,блога.</p>
-              </div>
+              <div class="customers-card__img"><img src="img/customer1.png" alt=""></div>
+              <p class="customers-card__text">Time is the most precious thing you have when bootstrapping. You can't take time to ponder on design…</p>
+              <p class="customers-card__date">9:13 PM · Nov 9, 2018</p>
             </div>
           </div>
+          <div class="customers__slide">
+            <div class="customers-card">
+              <div class="customers-card__top">
+                <div class="customers-card__ava"><img src="img/ava2.png" alt=""></div>
+                <div class="customers-card__user">
+                  <p class="customers-card__name">Prescott MacCaffery</p>
+                  <p class="customers-card__post">Designer, Freelancer</p>
+                </div><a class="customers-card__icon" href=""><img src="img/twitter.svg" alt=""></a>
+              </div>
+              <div class="customers-card__img"><img src="img/customer2.png" alt=""></div>
+              <p class="customers-card__text">Time is the most precious thing you have when bootstrapping. You can't take time to ponder on design…</p>
+              <p class="customers-card__date">9:13 PM · Nov 9, 2018</p>
+            </div>
+          </div>
+          <div class="customers__slide">
+            <div class="customers-card">
+              <div class="customers-card__top">
+                <div class="customers-card__ava"><img src="img/ava1.png" alt=""></div>
+                <div class="customers-card__user">
+                  <p class="customers-card__name">Marleah Eagleston</p>
+                  <p class="customers-card__post">Founder at Spicenet</p>
+                </div><a class="customers-card__icon" href=""><img src="img/twitter.svg" alt=""></a>
+              </div>
+              <div class="customers-card__img"><img src="img/customer1.png" alt=""></div>
+              <p class="customers-card__text">Time is the most precious thing you have when bootstrapping. You can't take time to ponder on design…</p>
+              <p class="customers-card__date">9:13 PM · Nov 9, 2018</p>
+            </div>
+          </div>
+          <div class="customers__slide">
+            <div class="customers-card">
+              <div class="customers-card__top">
+                <div class="customers-card__ava"><img src="img/ava3.png" alt=""></div>
+                <div class="customers-card__user">
+                  <p class="customers-card__name">Aaron Almaraz</p>
+                  <p class="customers-card__post">CEO & Founder at Gearat</p>
+                </div><a class="customers-card__icon" href=""><img src="img/twitter.svg" alt=""></a>
+              </div>
+              <div class="customers-card__img"><img src="img/customer3.png" alt=""></div>
+              <p class="customers-card__text">Time is the most precious thing you have when bootstrapping. You can't take time to ponder on design…</p>
+              <p class="customers-card__date">9:13 PM · Nov 9, 2018</p>
+            </div>
+          </div>
+          <div class="customers__slide">
+            <div class="customers-card">
+              <div class="customers-card__top">
+                <div class="customers-card__ava"><img src="img/ava3.png" alt=""></div>
+                <div class="customers-card__user">
+                  <p class="customers-card__name">Aaron Almaraz</p>
+                  <p class="customers-card__post">CEO & Founder at Gearat</p>
+                </div><a class="customers-card__icon" href=""><img src="img/twitter.svg" alt=""></a>
+              </div>
+              <div class="customers-card__img"><img src="img/customer3.png" alt=""></div>
+              <p class="customers-card__text">Time is the most precious thing you have when bootstrapping. You can't take time to ponder on design…</p>
+              <p class="customers-card__date">9:13 PM · Nov 9, 2018</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="join">
+      <div class="join-right"><img src="img/join-right.svg" alt="">
+        <div class="join-right__img join-right__img--1"><img src="img/join-right1.png" alt=""></div>
+        <div class="join-right__img join-right__img--2"><img src="img/join-right2.png" alt=""></div>
+        <div class="join-right__img join-right__img--3"><img src="img/join-right3.png" alt=""></div>
+        <div class="join-right__img join-right__img--4"><img src="img/join-right4.png" alt=""></div>
+      </div>
+      <div class="join-left"><img src="img/join-left.svg" alt="">
+        <div class="join-left__img join-left__img--1"><img src="img/join-left1.png" alt=""></div>
+        <div class="join-left__img join-left__img--2"><img src="img/join-left2.png" alt=""></div>
+        <div class="join-left__img join-left__img--3"><img src="img/join-left3.png" alt=""></div>
+        <div class="join-left__img join-left__img--4"><img src="img/join-left4.png" alt=""></div>
+      </div>
+      <div class="container">
+        <div class="join__content">
+          <div class="join__logo"><img src="img/logo.svg" alt=""></div>
+          <p class="join__text">Ready to get started?</p>
+          <p class="join__title">Join us right now!</p>
+          <p class="join__description">Try Bidgood  free for 7 days. No credit card needed.</p>
+          <button class="button">Get started</button>
         </div>
       </div>
     </section>
     <!-- FOOTER-->
     <footer class="footer">
-      <div class="footer__container">
-        <div class="footer__column"><a class="footer__logo" href=""><img src="img/logo.svg"></a></div>
-        <div class="footer__column">
-          <p class="footer__title footer__title--grey">Ribas hotels group</p><a class="footer__link scroll-to" href="#company">О компании</a><a class="footer__link scroll-to" href="#objects">Наши объекты</a><a class="footer__link scroll-to" href="#press">Инвестиционные предложения</a><a class="footer__link scroll-to" href="#press">Новости</a><a class="footer__link" href="">Блог</a><a class="footer__link scroll-to" href="#contacts">Контакты</a>
+      <div class="container">
+        <div class="footer__flex">
+          <div class="footer__left"><a class="footer__logo" href=""><img src="img/logo.svg" alt=""><span>BIDGOOD</span></a>
+            <div class="footer__buttons">
+              <button class="button button--sign button--bordered open-modal" data-modal="#signIn">Sign In</button>
+              <button class="button button--sign open-modal" data-modal="#signUp">Sign Up</button>
+            </div>
+          </div>
+          <nav class="footer-menu">
+            <div class="footer-menu__column">
+              <p class="footer-menu__title">LEARN</p>
+              <div class="footer-menu__list"><a class="footer-menu__link" href="">Blog</a><a class="footer-menu__link" href="">WiK</a><a class="footer-menu__link" href="">FAC</a></div>
+            </div>
+            <div class="footer-menu__column">
+              <p class="footer-menu__title">COMMUNITY</p>
+              <div class="footer-menu__list"><a class="footer-menu__link" href="">Telegram</a><a class="footer-menu__link" href="">Twitter</a><a class="footer-menu__link" href="">Facebook</a></div>
+            </div>
+            <div class="footer-menu__column">
+              <p class="footer-menu__title">BLOG</p>
+              <div class="footer-menu__list"><a class="footer-menu__link" href="">HODL Indices</a><a class="footer-menu__link" href="">Custom Indices</a><a class="footer-menu__link" href="">Custom Portfolios</a><a class="footer-menu__link" href="">Portfolio Rebalancing</a></div>
+            </div>
+          </nav>
         </div>
-        <div class="footer__column">
-          <p class="footer__title">Услуги</p><a class="footer__link" href="">Гостиничный девелопмент</a><a class="footer__link" href="">Гостиничная франшиза</a><a class="footer__link" href="">Управление и бронирование</a><a class="footer__link" href="">Гостиничный консалтинг</a>
-        </div>
-        <div class="footer__column">
-          <p class="footer__title">Контакты</p><a class="footer__link" href="tel:+38 (048) 706-47-36">+38 (048) 706-47-36</a>
-          <p class="footer__link">Украина, Одесса, пр. Гагарина, 25</p><a class="footer__link" href="mailto:partners@ribashotels.com">partners@ribashotels.com</a>
-          <div class="header-socials"><a class="header-socials__item" href="https://fb.com/ribasgroup" target="_blank"><img src="img/fb.svg"></a><a class="header-socials__item" href="https://www.youtube.com/channel/UCaJGpS0aOcUeYP7MhHkXjCA" target="_blank"><img src="img/yt.png"></a></div><a class="button footer__button" href="">Сеть отелей</a>
-        </div>
-        <button class="footer__up"><img src="img/up.png"></button>
+        <p class="footer__copyright">© 2020 BIGGOOD, Inc.</p>
       </div>
     </footer>
+    <!-- MODALS-->
+    <div class="modal" id="signIn">
+      <div class="modal__content">
+        <button class="modal__close close-modal"></button>
+        <p class="modal__title">Sign In</p>
+        <form class="modal__form">
+          <input class="modal__input" type="text" placeholder="Login">
+          <input class="modal__input" type="password" placeholder="Password">
+          <button class="modal__forget-link open-modal" data-modal="#passwordReset">Forgot password?</button>
+          <button class="button">Enter</button>
+        </form><a class="modal__google" href="">Sign in with Google</a>
+        <p class="modal__link">Don't have a Bidgood account? <a href="" class="open-modal" data-modal="#signUp">Sign Up</a></p>
+      </div>
+    </div>
+    <div class="modal" id="signUp">
+      <div class="modal__content">
+        <button class="modal__close close-modal"></button>
+        <p class="modal__title">Sign Up</p>
+        <form class="modal__form">
+          <input class="modal__input" type="email" placeholder="Email">
+          <input class="modal__input" type="password" placeholder="Password">
+          <input class="modal__input" type="password" placeholder="Confirm Password">
+          <button class="button">Registration</button>
+        </form><a class="modal__google" href="">Sign Up with Google</a>
+        <p class="modal__link">Already have an Bidgood account? <a href="" class="open-modal" data-modal="#signIn">Sign In</a></p>
+      </div>
+    </div>
+    <div class="modal" id="passwordReset">
+      <div class="modal__content">
+        <button class="modal__close close-modal"></button>
+        <p class="modal__title">Password Reset</p>
+        <p class="modal__text">To reset you password enter your email address below and follow the instructions that we will send to you.</p>
+        <form class="modal__form modal__form--t69">
+          <input class="modal__input" type="email" placeholder="Email">
+          <button class="button">Send</button>
+        </form>
+      </div>
+    </div>
+    <div class="modal" id="passwordReset2">
+      <div class="modal__content">
+        <button class="modal__close close-modal"></button>
+        <p class="modal__title">Password Reset</p>
+        <p class="modal__text">E-mail was sent to</p>
+        <p class="modal__email">asdfghjklqwertygh@gmail.com</p>
+        <p class="modal__text modal__text--white">We've sent the instructions to your email. Go check it</p>
+        <p class="modal__text">You can keep this page open while you check your email. <br />If you don't receive the instructions within a minute <br />or two try resending the instructions.</p>
+        <button class="button close-modal">Ok</button>
+      </div>
+    </div>
+    <div class="modal" id="changePassword">
+      <div class="modal__content">
+        <button class="modal__close close-modal"></button>
+        <p class="modal__title">Change Password</p>
+        <form class="modal__form">
+          <input class="modal__input" type="password" placeholder="New Password">
+          <input class="modal__input" type="password" placeholder="Repeat New Password">
+          <button class="button">Submit</button>
+        </form>
+      </div>
+    </div>
     <!-- SCRIPTS--><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/scripts.js"></script>
+<script src="js/all-scripts.js"></script>
   </body>
 </html>
